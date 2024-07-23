@@ -17,7 +17,7 @@
     />
   </head>
   <body style="background-color: #322c2b">
-    <nav class="navbar">
+   <nav class="navbar">
       <div class="navbar__container">
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
@@ -25,20 +25,20 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="about.html" class="navbar__links"> About </a>
+            <a href="index.html" class="navbar__links">About</a>
           </li>
           <li class="navbar__item">
-            <a href="/work.html" class="navbar__links"> Work </a>
+            <a href="work.html" class="navbar__links">Work</a>
           </li>
           <li class="navbar__item">
-            <a href="hobbies.html" class="navbar__links"> Hobbies </a>
+            <a href="hobbies.html" class="navbar__links">Hobbies</a>
           </li>
           <li class="navbar__item">
             <a href="misc.html" class="navbar__links">Misc.</a>
           </li>
-          <div class="dropdown">
-            <button class="dropbtn">Contact</button>
-            <div class="dropdown-content">
+          <li class="navbar__item dropdown">
+            <button class="dropbtn" id="contactButton">Contact</button>
+            <div class="dropdown-content" id="contactDropdown">
               <a
                 class="social__icon--link"
                 href="mailto:arvind.venkat28@gmail.com"
@@ -72,7 +72,7 @@
                 <i class="fab fa-linkedin"></i>
               </a>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
     </nav>
