@@ -1,17 +1,20 @@
-/* ABOUT PAGE */
+css
+/*ABOUT PAGE */
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Didot', 'serif';
+  
 }
 
 .hero {
   background: url('images/beach.jpg') no-repeat center top;
-  background-size: cover;
+ 
+  background-size: 100%;
   position: relative;
-  height: 100vh;
+  height: 100vh; /* Ensure the hero section takes the full height of the viewport */
 }
 
 .hero::before {
@@ -21,27 +24,27 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
   z-index: 0;
 }
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
   max-width: 1300px;
   padding: 0 50px;
-  color: #fff;
-  text-align: center;
+  color: #fff; /* Ensure text color is visible */
 }
 
 .hero__content {
-  color: #d3b8ae;
+  color: #d3b8ae; /* Adjust text color for better visibility */
 }
 
 .hero__content h1 {
@@ -55,6 +58,7 @@ body {
 .js {
   margin-top: -40px;
 }
+
 
 .navbar__links,
 .dropbtn,
@@ -79,10 +83,13 @@ body {
   display: flex;
   justify-content: space-between;
   height: 80px;
+  z-index: 1;
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 #navbar__logo {
@@ -149,12 +156,21 @@ body {
 }
 
 .button:hover {
+
   background: #4837ff;
   transition: all 0.3s ease;
 }
 
+
+
 @media screen and (max-width: 960px) {
   .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
     padding: 0;
   }
 
@@ -209,6 +225,9 @@ body {
   }
 
   .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 80px;
     margin: 0;
@@ -242,20 +261,27 @@ body {
 /* Main Content CSS */
 .main {
   background-color: #322c2b;
+ 
 }
 
 .main__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-self: center;
   margin: 0 auto;
   height: 90vh;
   background-color: #322c2b;
+  z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+ 
 }
+
+
+
 
 .main__content h1 {
   font-size: 4rem;
@@ -270,6 +296,8 @@ body {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
+  position: relative;
+  bottom: 40px;
 }
 
 .main__btn {
@@ -279,20 +307,41 @@ body {
   border: none;
   border-radius: 4px;
   color: #fff;
+  margin-top: 0rem;
   cursor: pointer;
+  position: relative;
   transition: all 0.35s;
+  outline: none;
+  bottom: 60px;
+  left: 0;
 }
 
 .main__btn a {
+  position: relative;
+  z-index: 2;
   color: #fff;
   text-decoration: none;
 }
 
-
-.main__btn:hover{
-  background-color: #b5c18e;
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #b5c18e;
+  transition: all 0.35s;
+  border-radius: 4px;
 }
 
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
 
 .main__img--container {
   text-align: center;
@@ -303,19 +352,20 @@ body {
   width: 80%;
 }
 
-.rutgers {
+.rutgers{
   background-color: #322c2b;
   border-radius: 8px;
   text-align: right;
-  margin-top: -400px;
+  margin-top: -400px; /* Move the image up */
 }
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .main__container {
+    display: grid;
     grid-template-columns: auto;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     width: 100%;
     margin: 0 auto;
     height: 90vh;
@@ -331,8 +381,8 @@ body {
     margin-top: 2rem;
   }
 
-  .main__content h3 {
-    font-size: 1.5rem;
+  .main__content h2 {
+    font-size: 3rem;
   }
 
   .main__content p {
@@ -347,13 +397,13 @@ body {
     margin-top: 3rem;
   }
 
-  .main__content h3 {
-    font-size: 1.2rem;
+  .main__content h2 {
+    font-size: 2rem;
   }
 
   .main__content p {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .main__btn {
@@ -362,9 +412,10 @@ body {
   }
 }
 
-/* Main photo */
+
+/* main photo */ 
 .visit {
-  background: #cfccbd;
+  background: #cfccbd; /* Light Olive */
   padding: 50px 20px;
   display: flex;
   justify-content: center;
@@ -386,14 +437,20 @@ body {
   margin-bottom: 20px;
 }
 
+
+
+
 /* About me Section */
 .about {
   background: #322c2b;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
-  height: auto;
+  justify-content: left;
+  align-items: left;
+  padding-right: 40px;
+  padding-left: 110px;
+  height: 40vh;
+ 
 }
 
 .about h2 {
@@ -415,26 +472,36 @@ body {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+
 }
 
 .about__card {
   margin: 1rem;
-  width: 100%;
+  width: 500px;
   border-radius: 4px;
   background-size: cover;
   position: relative;
+  right: 20px;
+  bottom: 100px;
   color: #fff;
-  padding: 1rem;
+  padding-bottom: 20px; 
 }
 
-/* Services Section */
+.about__card:before {
+  opacity: 0.2;
+}
+
+
 .services {
   background: #322c2b;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
-  height: auto;
+  justify-content: left;
+  align-items: left;
+  padding-right: 40px;
+  padding-left: 110px;
+
+  height: 100vh;
 }
 
 .services h2 {
@@ -460,34 +527,53 @@ body {
 
 .services__card {
   margin: 1rem;
-  width: 100%;
+  width: 500px;
   border-radius: 4px;
   background-size: cover;
   position: relative;
+  right: 20px;
   color: #fff;
-  padding: 1rem;
+}
+
+.services__card:before {
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 960px) {
   .services {
-    height: auto;
+    height: 1600px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .services {
+    height: 1400px;
+  }
+
+  .services h1 {
+    font-size: 1.2rem;
+  }
+
   .services__card {
-    width: 100%;
+    width: 300px;
   }
 }
 
-/* Coursework Section */
+
+
+/* Coursework */
 .coursework {
   background: #322c2b;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
-  height: auto;
+  justify-content: left;
+  align-items: left;
+  padding-right: 40px;
+  padding-left: 110px;
+  height: 100vh;
+  margin-top: -600px;
+  
+  
 }
 
 .coursework h2 {
@@ -500,7 +586,7 @@ body {
   color: #fff;
 }
 
-.coursework__container {
+.coursework __container {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -508,12 +594,15 @@ body {
 
 .coursework__card {
   margin: 1rem;
-  width: 100%;
+  width: 1000px;
   border-radius: 4px;
   background-size: cover;
   position: relative;
+  right: 20px;
   color: #fff;
-  padding: 1rem;
+  bottom: 50px;
+
+ 
 }
 
 /* Footer CSS */
@@ -522,18 +611,24 @@ body {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #footer__logo {
   color: #fff;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
 }
 
+
+/* Footer Section */
 .footer {
   background: #322c2b;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -542,14 +637,15 @@ body {
 }
 
 .footer__links {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Adjust as needed */
 }
 
 .footer__copyright {
   color: #fff;
   font-size: 1rem;
-  margin: 0;
+  margin: 0; /* Remove margin */
 }
+
 
 .footer__links {
   width: 100%;
@@ -569,10 +665,14 @@ body {
   margin: 16px;
   text-align: left;
   width: 160px;
+  box-sizing: border-box;
 }
 
 .footer__link--items h2 {
   margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
   color: #fff;
 }
 
@@ -593,6 +693,7 @@ body {
   font-size: 24px;
 }
 
+
 .social__media {
   max-width: 1000px;
   width: 100%;
@@ -600,22 +701,26 @@ body {
 
 .social__media--wrap {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the social media icons */
   align-items: center;
   width: 100%;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 20px auto; /* Adjust the margin for spacing */
 }
 
 .social__icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Space around for better centering */
   width: 240px;
-  margin-left: -40px;
+  margin-left: -70px;
+margin-left: -40px;
+  margin-bottom: -800px;
 }
 
 .social__logo {
   color: #fff;
+  justify-self: start;
+  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -627,7 +732,7 @@ body {
 .website__rights {
   color: #fff;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 10px; /* Adjust the margin for spacing */
 }
 
 @media screen and (max-width: 820px) {
@@ -660,35 +765,44 @@ body {
   }
 
   .social__icons {
-    justify-content: center;
+    justify-content: center; /* Center icons on smaller screens */
+   
   }
 }
 
-/* Dropdown */
+
+/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
+/* Dropdown button */
 .dropdown .dropbtn {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   color: #fff;
   border: none;
   background-color: #322c2b;
 }
 
+/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
+
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px #322c2b;
   z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: white;
@@ -697,35 +811,64 @@ body {
   display: block;
   text-align: center;
   background-color: #322c2b;
+  
 }
 
 .dropdown-content a:hover {
-  background-color: #b5c18e;
+  background-color: #B5C18E;
+  
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .navbar__item,
 .dropdown {
-  padding: 0 1rem;
+  padding: 0 1rem; /* Add padding to match spacing */
 }
 
 .navbar__links:hover,
 .dropdown:hover, .dropdown-content:hover, .dropbtn {
-  color: #b5c18e;
+  color: #B5C18E;
   transition: all 0.3s ease;
 }
 
-/* Work Info Section */
+
+/* Navbar links and dropdown button */
+.navbar__links,
+.dropdown .dropbtn {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 1.2rem;
+  background-color: #322c2b;
+  border: none;
+  appearance: none; /* Remove default button appearance */
+  -webkit-appearance: none; /* Remove default button appearance for WebKit browsers */
+  -moz-appearance: none; /* Remove default button appearance for Mozilla browsers */
+  cursor: pointer; /* Ensure the cursor is a pointer */
+}
+
+
+
+.dropdown-content:hover{
+  background-color: #444;
+}
+
 .workInfo {
   background: #322c2b;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem;
-  height: auto;
+  justify-content: left;
+  align-items: left;
+  padding-right: 40px;
+  padding-left: 110px;
+  height: 100vh;
 }
 
 .workInfo p {
@@ -742,17 +885,24 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  right: 400px;
   text-align: center;
 }
 
 .workInfo__card {
   margin: 1rem;
-  width: 100%;
+  width: 500px;
   border-radius: 4px;
   background-size: cover;
   position: relative;
+  right: 20px;
   color: #fff;
   font-size: 2rem;
+  margin-top: -250px;
+}
+
+.workInfo__card:before {
+  opacity: 0.2;
 }
 
 .no-wrap {
@@ -763,10 +913,16 @@ body {
   color: #b5c18e;
 }
 
+
 /* Hobbies Section */
 .hobbies {
   background-color: #322c2b;
+}
+
+.hobbies {
+
   padding: 20px;
+  background-color: #322c2b;
 }
 
 .hobbies h2 {
@@ -785,24 +941,26 @@ body {
   font-size: 40px;
   color: #6895D2;
 }
-
-.hobbies p2 {
+.hobbies p2{
   font-size: 20px;
   color: #fff;
 }
 
+
 .hobbies__image--container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  position: absolute; left: 60px; top: 120px;
 }
 
 .hobbies__image--container img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
+  height: 30%;
+  width: 30%;
+  
+  
+} 
 
-/* Experience Grid */
+
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -816,6 +974,7 @@ body {
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .card img {
@@ -826,32 +985,47 @@ body {
 .card h2 {
   font-size: 2em;
   margin: 10px 0;
-  color: #e4c59e;
+ color: #e4c59e;
+}
+
+.card em {
+  font-style: italic;
 }
 
 .card p {
   font-size: 1em;
-  color: #e4c59e;
+  color:  #e4c59e;
 }
 
-.jnj,
-.fire,
-.roam,
+.jnj {
+  background-color: #5B3030;
+}
+
+/* #3C5B6F */ 
+
+.roam {
+  background-color: #5B3030;
+}
+
 .hdi {
-  background-color: #5b3030;
+  background-color:#5B3030;
 }
 
-.jnj:hover,
-.fire:hover,
-.roam:hover,
-.hdi:hover {
-  background-color: #3c5b6f;
+.fire {
+  background-color: #5B3030;
+}
+
+.jnj:hover, .fire:hover, .roam:hover, .hdi:hover{
+  background-color: #3C5B6F;
   transition: all 0.3s ease;
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Misc Section */
+
+
+
+/* Misc Section  */
 .misc--link {
   color: #fff;
   font-size: 24px;
@@ -881,20 +1055,20 @@ body {
 .timeline-icon {
   width: 20px;
   height: 20px;
-  background-color: #2e2e2e;
+  background-color: #2E2E2E;
   border-radius: 50%;
   margin-right: 20px;
 }
 
 .timeline-content {
-  background-color: #b5c18e;
+  background-color: #B5C18E;
   padding: 10px 20px;
   border-radius: 8px;
 }
 
 .timeline-content h3 {
   margin: 0;
-  color: #1e1e1e;
+  color: #1E1E1E/* #A2B6FF;*/ 
 }
 
 .timeline-content p {
@@ -908,21 +1082,34 @@ body {
   background-color: #803d3b;
   padding: 30px;
   border-radius: 8px;
+
   color: #fff;
   margin-top: -20px;
+  margin-right: 500px;
+ 
 }
 
 .details h1 {
   margin: 0;
 }
 
-.timeline-item[data-target="srivari-temple"]:hover .timeline-content,
+
+.timeline-item[data-target="srivari-temple"]:hover .timeline-content {
+  background-color:#83B4FF; 
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  
+}
+
 .timeline-item[data-target="srivari-temple-dance"]:hover .timeline-content {
-  background-color: #83b4ff;
+  background-color: #83B4FF; 
   transition: all 0.3s ease;
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .upcoming h1 {
   font-size: 4rem;
@@ -931,8 +1118,6 @@ body {
   padding-right: 50px;
   padding-left: 70px;
 }
-
-/* Blog Section */
 .blog_body {
   display: flex;
   justify-content: center;
@@ -945,12 +1130,13 @@ body {
 }
 
 .blog-posts {
-  width: 60%;
-  background-color: none;
+  width: 60%; 
+  background-color: none; 
   padding: 40px;
   color: #fff;
   text-align: center;
   margin-left: 400px;
+
 }
 
 .blog-post {
@@ -975,6 +1161,7 @@ body {
   color: #ccc;
   line-height: 1.6;
   font-size: 1.5rem;
+
 }
 
 .blog-post a {
@@ -993,3 +1180,4 @@ body {
 .blog-post i {
   margin-right: 10px;
 }
+
