@@ -8,7 +8,6 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
- 
   .hero,
   .about,
   .footer__container {
@@ -19,13 +18,6 @@
     width: 100%;
   }
 
-  
-
-  
-
- 
-
- 
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -81,7 +73,8 @@
   }
 
   .coursework__card h4 {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+    line-height: 1.5; /* Adjusted line height for better readability */
     margin: 0.5rem 0;
     padding: 0 1rem;
   }
@@ -136,20 +129,20 @@
 
   /* Add padding to the coursework section */
   .coursework {
-    padding-top: 5rem; /* Increase this value to shift content downward more */
+    padding-top: 8rem; /* Increase this value to shift content downward more */
   }
 
   /* Adjust text size for better fit on screen */
   .coursework__card h4,
   .about__card h3 {
     font-size: 1.2rem; /* Ensure text size is manageable on mobile */
-    line-height: 3; /* Adjust line height for better readability */
+    line-height: 1.5; /* Adjust line height for better readability */
   }
 
   /* Ensure all text fits within the screen */
   .coursework__card,
   .about__card {
-    padding: 0 2rem; /* Add horizontal padding to ensure text fits within screen */
+    padding: 1rem 2rem; /* Add horizontal padding to ensure text fits within screen */
   }
 }
 
@@ -171,15 +164,13 @@
     margin: 0;
     width: 100%;
     position: absolute;
-    top: -1000px;
+    top: 80px; /* Adjusted to ensure the menu appears below the navbar */
     opacity: 0;
     transition: all 0.5s ease;
-    height: 50vh;
+    height: auto; /* Adjusted to allow the menu to expand as needed */
     z-index: -1;
-   flex-direction: column;
-   align-items: right;
-
-    
+    flex-direction: column;
+    align-items: right;
   }
 
   .navbar__menu.active {
@@ -264,7 +255,7 @@
   .dropdown-content a {
     float: none;
     color: #fff;
-    padding: 2rem;
+    padding: 12px 0; /* Adjusted padding for alignment */
     text-decoration: none;
     display: block;
     text-align: center;
@@ -281,7 +272,7 @@
   }
 
   .dropdown .dropbtn {
-    display: inline-block;
+    display: inline-block; /* Adjusted to match other navbar links */
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -291,13 +282,6 @@
     background-color: #322c2b;
   }
 }
-
-
-
-
-
-
-
 
 /* Start of CSS */
 
