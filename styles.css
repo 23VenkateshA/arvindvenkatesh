@@ -510,7 +510,9 @@
   margin-top: -400px; /* Move the image up */
 }
 
-/* Mobile Responsive */
+
+
+/* Mobile Responsive 
 @media screen and (max-width: 768px) {
   .main__container {
     display: grid;
@@ -562,6 +564,7 @@
     margin: 2.5rem 0;
   }
 }
+*/ 
 
 
 /* main photo */ 
