@@ -3,10 +3,6 @@
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 767px) {
-  .circle {
-    display: none;
-  }
-
   body, 
   div,
   .navbar, 
@@ -21,6 +17,7 @@
     text-align: center;
     margin: 0; /* Ensure no extra margin */
     padding: 0; /* Ensure no extra padding */
+    width: 100%;
   }
 
   .hero__content, 
@@ -49,14 +46,14 @@
     max-width: 100%; /* Make sure the image is responsive */
   }
 
-  .about h2 {
+  .about h2,
+  .about p,
+  .coursework h2,
+  .coursework h4 {
     text-align: center;
-    margin: 2rem 0 3rem 0;
-  }
-
-  .about p {
-    text-align: center;
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0; /* Adjust margins to avoid overlap */
+    padding: 0 1rem; /* Add padding for better spacing */
+    width: 100%;
   }
 
   .portfolio__box:hover img {
@@ -79,6 +76,34 @@
   .portfolio__box .portfolio__overlay,
   .portfolio__box .portfolio__layer {
     display: none;
+  }
+
+  /* Additional Styles for better readability */
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__item {
+    margin: 0.5rem 0;
+  }
+
+  .navbar__links {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .about__card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .coursework__card h4 {
+    font-size: 1rem;
   }
 }
 
