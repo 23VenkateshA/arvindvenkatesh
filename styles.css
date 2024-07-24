@@ -31,6 +31,8 @@
 
 .mobile-device .rutgers img{
     margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -79,7 +81,7 @@
 
 
 
-body {
+.body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
