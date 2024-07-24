@@ -3,7 +3,7 @@
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 767px) {
-  body,
+  body, 
   html {
     margin: 0;
     padding: 0;
@@ -145,9 +145,17 @@
   * {
     box-sizing: border-box;
   }
+
+  /* Add spacing below the hero section */
+  .hero {
+    margin-bottom: 2rem; /* Adjust this value to create the desired space */
+  }
+
+  /* Add padding to the coursework section */
+  .coursework {
+    padding-top: 2rem; /* Adjust this value to shift content downward */
+  }
 }
-
-
 
 /* Start of CSS */ 
 
