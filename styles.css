@@ -12,7 +12,7 @@
 .mobile-device .hero, 
 .mobile-device .about, 
 .mobile-device .coursework, 
-.mobile-device .footer__container
+.mobile-device .footer__container,
 .mobile-device .about__card{
   display: flex;
   flex-direction: column;
