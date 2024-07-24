@@ -1,87 +1,86 @@
 
 /*ABOUT PAGE */
 
-
 /* Styles for mobile devices */
-.mobile-device .circle {
-  display: none;
-}
+@media only screen and (max-width: 767px) {
+  .circle {
+    display: none;
+  }
 
-.mobile-device body, 
-.mobile-device div,
-.mobile-device .navbar, 
-.mobile-device .hero, 
-.mobile-device .about, 
-.mobile-device .coursework, 
-.mobile-device .footer__container,
-.mobile-device .about__card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  body, 
+  div,
+  .navbar, 
+  .hero, 
+  .about, 
+  .coursework, 
+  .footer__container,
+  .about__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
+  }
 
-.mobile-device .hero__content, 
-.mobile-device .about__container, 
-.mobile-device .coursework__container, 
-.mobile-device .footer__links, 
-.mobile-device .footer__copyright {
-  align-items: center;
-  text-align: center;
-}
+  .hero__content, 
+  .about__container, 
+  .coursework__container, 
+  .footer__links, 
+  .footer__copyright {
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure it takes full width */
+  }
 
-
-.mobile-device .rutgers img{
+  .rutgers img {
     margin: 0 auto;
-  align-items: center;
-  text-align: center;
-   display: flex;
-  flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Make sure the image is responsive */
+  }
+
+  .hero img, 
+  .about img, 
+  .coursework__card img {
+    margin: 0 auto;
+    max-width: 100%; /* Make sure the image is responsive */
+  }
+
+  .about h2 {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .about p {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .portfolio__box:hover img {
+    transform: none;
+  }
+
+  .portfolio__box .portfolio__layer {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .hero img {
+    margin-top: 6rem; /* Adjust the value as needed to ensure sufficient spacing */
+  }
+
+  .portfolio__box .portfolio__overlay {
+    opacity: 0;
+  }
+
+  .portfolio__box .portfolio__overlay,
+  .portfolio__box .portfolio__layer {
+    display: none;
+  }
 }
-
-
-
-.mobile-device .hero img, 
-.mobile-device .about img, 
-.mobile-device .coursework__card img {
-  margin: 0 auto;
-}
-
-/* Change hover to click behavior for portfolio section on mobile */
-.mobile-device .portfolio__box:hover img {
-  transform: none;
-}
-
-.mobile-device .about h2 {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-}
-
-.mobile-device .about p {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-}
-
-.mobile-device .portfolio__box .portfolio__layer {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.mobile-device .hero img {
-  margin-top: 6rem; /* Adjust the value as needed to ensure sufficient spacing */
-}
-
-.mobile-device .portfolio__box .portfolio__overlay {
-  opacity: 0;
-}
-
-/* Hide the overlay and show on click */
-.mobile-device .portfolio__box .portfolio__overlay,
-.mobile-device .portfolio__box .portfolio__layer {
-  display: none;
-}
-
-
 
 /* Start of CSS */ 
 
