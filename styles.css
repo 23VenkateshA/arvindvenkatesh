@@ -79,6 +79,16 @@
     padding: 0 1rem;
   }
 
+    .coursework {
+    padding-top: 8rem; /* Increased to shift coursework content further downward */
+  }
+
+
+
+  .coursework__card {
+    padding: 1rem 2rem; /* Increased padding to ensure text fits within the screen */
+  }
+
   .coursework__card h4 {
     font-size: 1rem;
     margin: 0.5rem 0;
