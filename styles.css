@@ -25,19 +25,69 @@
     width: 100%;
   }
 
-  .hero__content, 
-  .about__container, 
-  .coursework__container, 
-  .footer__links, 
-  .footer__copyright {
+  .navbar__menu {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
     width: 100%;
   }
 
-  .rutgers img {
-    margin: 0 auto;
+  .navbar__item {
+    margin: 0.5rem 0;
+  }
+
+  .navbar__links {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero__content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .about__container,
+  .coursework__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .about h2, 
+  .about p, 
+  .coursework h2, 
+  .coursework h4 {
+    text-align: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .about__card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .coursework__card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+  }
+
+  .rutgers img {
+    margin: 1rem 0;
+    display: block;
     max-width: 100%;
     height: auto; /* Ensure the height adjusts automatically */
   }
@@ -45,19 +95,9 @@
   .hero img, 
   .about img, 
   .coursework__card img {
-    margin: 0 auto;
+    margin: 1rem 0;
     max-width: 100%;
     height: auto; /* Ensure the height adjusts automatically */
-  }
-
-  .about h2,
-  .about p,
-  .coursework h2,
-  .coursework h4 {
-    text-align: center;
-    margin: 1rem 0; 
-    padding: 0 1rem; 
-    width: 100%;
   }
 
   .portfolio__box:hover img {
@@ -82,41 +122,31 @@
     display: none;
   }
 
-  /* Additional Styles for better readability */
-  .navbar__menu {
+  .footer__container {
+    padding: 1rem;
+  }
+
+  .footer__links {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .footer__copyright {
+    text-align: center;
+    margin: 1rem 0;
     width: 100%;
   }
 
-  .navbar__item {
-    margin: 0.5rem 0;
-  }
-
-  .navbar__links {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .hero__content h1 {
-    font-size: 2rem;
-  }
-
-  .about__card h3 {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-
-  .coursework__card h4 {
-    font-size: 1rem;
-  }
-
-  .hero, 
-  .coursework__container, 
-  .about__container {
-    padding: 1rem;
+  /* Ensure no extra white space */
+  * {
+    box-sizing: border-box;
   }
 }
+
 
 
 /* Start of CSS */ 
