@@ -90,6 +90,20 @@
 
     <!-- About me -->
     <div class="about">
+                      <script>
+                    // Detect device type
+                    let details = navigator.userAgent;
+                    let regexp = /android|iphone|kindle|ipad/i;
+                    let isMobileDevice = regexp.test(details);
+                  
+                    // Apply class based on device type
+                    if (isMobileDevice) {
+                      document.body.classList.add('mobile-device');
+                    } else {
+                      document.body.classList.add('desktop-device');
+                    }
+                  </script>
+
       <h2>about me</h2>
       <div class="about__container">
         <div class="about__card">
@@ -177,18 +191,6 @@
     <!-- TYPED JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
-    <script>
-    // Detect device type
-                    let details = navigator.userAgent;
-                    let regexp = /android|iphone|kindle|ipad/i;
-                    let isMobileDevice = regexp.test(details);
-                  
-                    // Apply class based on device type
-                    if (isMobileDevice) {
-                      document.body.classList.add('mobile-device');
-                    } else {
-                      document.body.classList.add('desktop-device');
-                    }
- </script>
+
   </body>
 </html>
