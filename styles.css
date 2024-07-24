@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0; /* Ensure no extra margin */
-    padding: 0; /* Ensure no extra padding */
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
 
@@ -27,23 +27,22 @@
   .footer__copyright {
     align-items: center;
     text-align: center;
-    width: 100%; /* Ensure it takes full width */
+    width: 100%;
   }
 
   .rutgers img {
     margin: 0 auto;
-    align-items: center;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    max-width: 100%; /* Make sure the image is responsive */
+    max-width: 100%;
+    height: auto; /* Ensure the height adjusts automatically */
   }
 
   .hero img, 
   .about img, 
   .coursework__card img {
     margin: 0 auto;
-    max-width: 100%; /* Make sure the image is responsive */
+    max-width: 100%;
+    height: auto; /* Ensure the height adjusts automatically */
   }
 
   .about h2,
@@ -51,20 +50,32 @@
   .coursework h2,
   .coursework h4 {
     text-align: center;
-    margin: 1rem 0; /* Adjust margins to avoid overlap */
-    padding: 0 1rem; /* Add padding for better spacing */
+    margin: 1rem 0; 
+    padding: 0 1rem; 
     width: 100%;
   }
 
- 
+  .portfolio__box:hover img {
+    transform: none;
+  }
+
+  .portfolio__box .portfolio__layer {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
   .hero img {
-    margin-top: 6rem; /* Adjust the value as needed to ensure sufficient spacing */
+    margin-top: 1rem; /* Adjusted for better spacing */
   }
 
   .portfolio__box .portfolio__overlay {
     opacity: 0;
   }
 
+  .portfolio__box .portfolio__overlay,
+  .portfolio__box .portfolio__layer {
+    display: none;
+  }
 
   /* Additional Styles for better readability */
   .navbar__menu {
@@ -93,7 +104,16 @@
   .coursework__card h4 {
     font-size: 1rem;
   }
+
+  .hero {
+    padding: 1rem; /* Ensure padding to avoid content touching edges */
+  }
+
+  .coursework__container, .about__container {
+    padding: 1rem;
+  }
 }
+
 
 /* Start of CSS */ 
 
