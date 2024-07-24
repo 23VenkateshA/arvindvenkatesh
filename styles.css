@@ -4,13 +4,18 @@
 /* Styles for mobile devices */
 @media only screen and (max-width: 767px) {
   body, 
-  div,
-  .navbar, 
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .navbar,
   .hero, 
   .about, 
   .coursework, 
-  .footer__container,
-  .about__card {
+  .footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +86,7 @@
   .navbar__menu {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .navbar__item {
@@ -105,11 +111,9 @@
     font-size: 1rem;
   }
 
-  .hero {
-    padding: 1rem; /* Ensure padding to avoid content touching edges */
-  }
-
-  .coursework__container, .about__container {
+  .hero, 
+  .coursework__container, 
+  .about__container {
     padding: 1rem;
   }
 }
