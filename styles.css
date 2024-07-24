@@ -28,6 +28,15 @@
   text-align: center;
 }
 
+
+mobile-device .rutgers img, 
+.mobile-device .about-img img, 
+.mobile-device .portfolio-box img {
+    margin: 0 auto;
+}
+
+
+
 .mobile-device .hero img, 
 .mobile-device .about img, 
 .mobile-device .coursework__card img {
