@@ -148,25 +148,25 @@
 
   /* Add spacing below the hero section */
   .hero {
-    margin-bottom: 2rem; /* Adjust this value to create the desired space */
+    margin-bottom: 4rem; /* Adjust this value to create the desired space */
   }
 
   /* Add padding to the coursework section */
   .coursework {
-    padding-top: 3rem; /* Increase this value to shift content downward more */
+    padding-top: 5rem; /* Increase this value to shift content downward more */
   }
 
   /* Adjust text size for better fit on screen */
   .coursework__card h4,
   .about__card h3 {
-    font-size: 1rem; /* Ensure text size is manageable on mobile */
-    line-height: 1.2; /* Adjust line height for better readability */
+    font-size: 1.2rem; /* Ensure text size is manageable on mobile */
+    line-height: 3; /* Adjust line height for better readability */
   }
 
   /* Ensure all text fits within the screen */
   .coursework__card,
   .about__card {
-    padding: 0 1rem; /* Add horizontal padding to ensure text fits within screen */
+    padding: 0 2rem; /* Add horizontal padding to ensure text fits within screen */
   }
 }
 
