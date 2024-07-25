@@ -23,7 +23,7 @@ html {
 }
 
 .mobile-device .hero__section {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .mobile-device .about__section {
@@ -56,8 +56,10 @@ html {
 
 .mobile-device .hero__content h1 {
   font-size: 2rem; /* Adjust font size for mobile */
-  margin-top: -18rem;
+  margin-top: 0;
   white-space: nowrap;
+  text-align: center; 
+  
 }
 
 .mobile-device .coursework__container h2 {
@@ -70,6 +72,7 @@ html {
 .mobile-device .about h2 {
   font-size: 2rem;
   margin-top: -15rem;
+  text-align: center;
 }
 
 .mobile-device .about h3 {
