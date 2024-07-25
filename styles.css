@@ -270,6 +270,7 @@ html {
   height: 100vh;
 }
 
+/*
 .hero::before {
   content: "";
   position: absolute;
@@ -280,7 +281,7 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-
+*/
 .hero__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
