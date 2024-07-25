@@ -272,11 +272,10 @@ margin-top: -15rem;
 }
 
 .hero {
-  background: url("images/beach.jpg") no-repeat center top;
-
+  background: url("images/beach.jpg") no-repeat center top;\
   background-size: 100%;
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 
 .hero::before {
