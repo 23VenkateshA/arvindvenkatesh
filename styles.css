@@ -1,13 +1,13 @@
 /* Styles for mobile devices */
 
 body,
-html{
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Ensure vertical scrolling */
 }
-
 
 .mobile-device body, 
 .mobile-device section,
@@ -17,31 +17,32 @@ html{
 .mobile-device .footer__links,
 .mobile-device .footer__link--wrapper,
 .mobile-device .footer__link--items,
-.mobile-device .footer__copyright{
-
+.mobile-device .footer__copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-   
-
+  width: 100%;
+  padding: 0 1rem; /* Add padding to ensure text fits within the screen */
 }
-
 
 .mobile-device .hero, 
 .mobile-device .hero__container,
 .mobile-device .social__icons,
 .mobile-device .about__container,
-.mobile-device .about__card{
+.mobile-device .about__card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
+  padding: 0 1rem; /* Add padding to ensure text fits within the screen */
 }
 
-.mobile-device .rutgers img{
+.mobile-device .rutgers img {
   margin: 0 auto;
   max-width: 100%;
 }
-
 
 /* Navbar Mobile Styles */
 @media screen and (max-width: 960px) {
@@ -56,8 +57,10 @@ html{
   }
 
   .navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -66,8 +69,6 @@ html{
     transition: all 0.5s ease;
     height: auto; /* Adjusted to allow the menu to expand as needed */
     z-index: -1;
-    flex-direction: column;
-    align-items: right;
   }
 
   .navbar__menu.active {
@@ -179,6 +180,7 @@ html{
     background-color: #322c2b;
   }
 }
+
 
 /* Start of CSS */
 
