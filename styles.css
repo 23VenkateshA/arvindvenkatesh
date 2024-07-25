@@ -27,7 +27,7 @@ html {
 }
 
 .mobile-device .about__section {
-  margin-top: 6rem; /* Added margin to separate hero and about sections */
+  margin-top: 12rem; /* Added margin to separate hero and about sections */
 }
 
 .mobile-device .hero {
