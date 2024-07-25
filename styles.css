@@ -6,6 +6,7 @@ html {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #322c2b; 
 }
 
 .mobile-device body,
@@ -27,7 +28,7 @@ html {
 }
 
 .mobile-device .about__section {
-  margin-top: 12rem; /* Added margin to separate hero and about sections */
+  margin-top: 10rem; /* Added margin to separate hero and about sections */
 }
 
 .mobile-device .hero {
