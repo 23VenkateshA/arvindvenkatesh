@@ -1,55 +1,49 @@
 /* Styles for mobile devices */
 
 body,
-html{
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-
-.mobile-device body, 
+.mobile-device body,
 .mobile-device .coursework,
 .mobile-device .coursework__container,
 .mobile-device .footer-container,
 .mobile-device .footer__links,
 .mobile-device .footer__link--wrapper,
 .mobile-device .footer__link--items,
-.mobile-device .footer__copyright{
-
+.mobile-device .footer__copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-   
-
 }
 
-.mobile-device .hero__section{
+.mobile-device .hero__section {
   margin-bottom: 0;
 }
 
-.mobile-device .about__section{
-  margin-top: 0;
+.mobile-device .about__section {
+  margin-top: 20px; /* Added margin to separate hero and about sections */
 }
-
 
 .mobile-device .hero {
   height: 50vh;
 }
 
-
-.mobile-device .hero, 
+.mobile-device .hero,
 .mobile-device .hero__container,
 .mobile-device .social__icons,
 .mobile-device .about__container,
-.mobile-device .about__card{
+.mobile-device .about__card {
   align-items: center;
   text-align: center;
 }
 
-.mobile-device .rutgers img{
+.mobile-device .rutgers img {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -60,38 +54,28 @@ html{
   padding: 0 20px; /* Adjust padding for mobile */
 }
 
-
 .mobile-device .hero__content h1 {
   font-size: 2rem; /* Adjust font size for mobile */
   margin-top: -18rem;
   white-space: nowrap;
-  
 }
 
-
-.mobile-device .coursework__container h2
-{
-font-size: 2rem;
-margin-top: 27rem;
-text-align: center;
-padding-right: 4rem;
+.mobile-device .coursework__container h2 {
+  font-size: 2rem;
+  margin-top: 27rem;
+  text-align: center;
+  padding-right: 4rem;
 }
 
-
-
-.mobile-device .about h2{
-font-size: 2rem;
-margin-top: -15rem;
+.mobile-device .about h2 {
+  font-size: 2rem;
+  margin-top: -15rem;
 }
 
-
-.mobile-device .about h3{
-  font-size: 1.2rem; 
+.mobile-device .about h3 {
+  font-size: 1.2rem;
   margin-top: 6rem;
-} 
-
-
-
+}
 
 .mobile-device .coursework h4 {
   font-size: 1.2rem; /* Adjust font size for mobile */
@@ -109,19 +93,20 @@ margin-top: -15rem;
   margin-top: 2rem; /* Add margin to create space between elements */
 }
 
-
 .mobile-device .footer__container {
   padding: 1rem;
 }
 
-
-.mobile-device .social__icons a{
+.mobile-device .social__icons a {
   margin: 0 10px;
 }
 
-.mobile-device .about, .coursework, .footer__container{
+.mobile-device .about,
+.coursework,
+.footer__container {
   background: none; /* Ensure there's no background color applied */
 }
+
 .mobile-device .footer__copyright {
   color: #fff;
   margin: 1rem 0;
@@ -266,7 +251,6 @@ margin-top: -15rem;
   }
 }
 
-
 /* Start of CSS */
 
 .body {
@@ -282,7 +266,6 @@ margin-top: -15rem;
   position: relative;
   height: 100vh;
 }
-
 
 .hero::before {
   content: "";
@@ -427,12 +410,6 @@ margin-top: -15rem;
   background: #4837ff;
   transition: all 0.3s ease;
 }
-
-
-
-
-
-
 
 /* About */
 .about {
@@ -805,7 +782,6 @@ margin-top: -15rem;
 .dropdown-content {
   display: none;
   position: absolute;
-
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px #322c2b;
   z-index: 1;
@@ -866,11 +842,7 @@ margin-top: -15rem;
   background-color: #444;
 }
 
-
 /* Work */
-
-
-
 .workInfo {
   background: #322c2b;
   display: flex;
@@ -1096,6 +1068,7 @@ margin-top: -15rem;
   padding-right: 50px;
   padding-left: 70px;
 }
+
 .blog_body {
   display: flex;
   justify-content: center;
