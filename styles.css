@@ -6,7 +6,7 @@ html {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: auto; /* Ensure vertical scrolling */
+
 }
 
 .mobile-device body, 
