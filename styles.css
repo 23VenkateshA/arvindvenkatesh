@@ -35,9 +35,8 @@ html{
 }
 
 
-.mobile-device .hero{
-height = 50vh;
-
+.mobile-device .hero {
+  height: 50vh;
 }
 
 
