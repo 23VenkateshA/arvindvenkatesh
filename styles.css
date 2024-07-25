@@ -26,6 +26,14 @@ html{
 
 }
 
+.mobile-device .hero__section{
+  margin-bottom: 0;
+}
+
+.mobile-device .about__section{
+  margin-top: 0;
+}
+
 
 .mobile-device .hero, 
 .mobile-device .hero__container,
