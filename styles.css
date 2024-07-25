@@ -276,7 +276,7 @@ margin-top: -15rem;
 
   background-size: 100%;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 .hero::before {
