@@ -43,6 +43,14 @@ html{
 }
 
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+
+
 /* Navbar Mobile Styles */
 @media screen and (max-width: 960px) {
   .navbar__container {
