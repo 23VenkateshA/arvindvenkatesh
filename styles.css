@@ -10,7 +10,6 @@ html{
 
 
 .mobile-device body, 
-.mobile-device section,
 .mobile-device .coursework,
 .mobile-device .coursework__container,
 .mobile-device .footer-container,
@@ -39,8 +38,91 @@ html{
 
 .mobile-device .rutgers img{
   margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   max-width: 100%;
 }
+
+.mobile-device .about {
+  padding: 0 20px; /* Adjust padding for mobile */
+}
+
+
+.mobile-device .hero__content h1 {
+  font-size: 2rem; /* Adjust font size for mobile */
+  margin-top: -18rem;
+  white-space: nowrap;
+  
+}
+
+
+.mobile-device .coursework__container h2
+{
+font-size: 2rem;
+margin-top: 27rem;
+text-align: center;
+padding-right: 4rem;
+}
+
+
+
+.mobile-device .about h2{
+font-size: 2rem;
+margin-top: -15rem;
+}
+
+
+.mobile-device .about h3{
+  font-size: 1.2rem; 
+  margin-top: 6rem;
+} 
+
+
+
+
+.mobile-device .coursework h4 {
+  font-size: 1.2rem; /* Adjust font size for mobile */
+  margin: 1rem 0; /* Add margin for spacing */
+}
+
+.mobile-device .coursework__card h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding-right: 2rem; /* Add padding for better readability */
+}
+
+.mobile-device .coursework__card {
+  padding: 1rem 2rem; /* Increase padding to ensure text fits within the screen */
+  margin-top: 2rem; /* Add margin to create space between elements */
+}
+
+
+.mobile-device .footer__container {
+  padding: 1rem;
+}
+
+
+.mobile-device .social__icons a{
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Navbar Mobile Styles */
