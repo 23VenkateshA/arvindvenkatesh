@@ -35,6 +35,12 @@ html{
 }
 
 
+.mobile-device .hero{
+height = 50vh;
+
+}
+
+
 .mobile-device .hero, 
 .mobile-device .hero__container,
 .mobile-device .social__icons,
