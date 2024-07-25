@@ -22,6 +22,7 @@ html{
   flex-direction: column;
   align-items: center;
   text-align: center;
+    font-size:10vw;
   
 
 }
@@ -38,6 +39,7 @@ html{
 
 .mobile-device .rutgers img{
   margin: 0 auto;
+  max-width: 100%;
 }
 
 
