@@ -1,151 +1,40 @@
 /* Styles for mobile devices */
-@media only screen and (max-width: 767px) {
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-     overflow-y: auto; 
-  }
 
-  .hero,
-  .about,
-  .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .hero__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .hero__content h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-
-  .about__container,
-  .coursework__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 16rem;
-  }
-
-  .about h2,
-  .about p,
-  .about {
-    text-align: center;
-    margin: 1rem 0;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .coursework h2,
-  .coursework h4 {
-    text-align: center;
-  }
-
-  .about__card h3 {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    padding: 0 1rem;
-  }
-
-  .coursework {
-    padding-top: 8rem; /* Increased to shift coursework content further downward */
-  }
-
-  .coursework__card {
-    padding: 1rem 2rem; /* Increased padding to ensure text fits within the screen */
-    margin-top: 8rem;
-  }
-
-  .coursework__card h4 {
-    font-size: 1.2rem; /* Adjusted font size for better readability */
-    line-height: 1.5; /* Adjusted line height for better readability */
-    margin: 0.5rem 0;
-    padding: 0 1rem;
-  }
-
-  .rutgers img {
-    margin: 1rem 0;
-    display: block;
-    max-width: 100%;
-    height: auto; /* Ensure the height adjusts automatically */
-  }
-
-  .hero img,
-  .about img,
-  .coursework__card img {
-    margin: 1rem 0;
-    max-width: 100%;
-    height: auto; /* Ensure the height adjusts automatically */
-  }
-
-  .hero img {
-    margin-top: 1rem; /* Adjusted for better spacing */
-  }
-
-  .footer__container {
-    padding: 1rem;
-  }
-
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem 0;
-  }
-
-  .footer__copyright {
-    text-align: center;
-    margin: 1rem 0;
-    width: 100%;
-  }
-
-  /* Ensure no extra white space */
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Add spacing below the hero section */
-  .hero {
-    margin-bottom: 4rem; /* Adjust this value to create the desired space */
-  }
-
-  /* Add padding to the coursework section */
-  .coursework {
-    padding-top: 8rem; /* Increase this value to shift content downward more */
-  }
-
-  /* Adjust text size for better fit on screen */
-  .coursework__card h4,
-  .about__card h3 {
-    font-size: 1.2rem; /* Ensure text size is manageable on mobile */
-    line-height: 1.5; /* Adjust line height for better readability */
-  }
-
-  /* Ensure all text fits within the screen */
-  .coursework__card,
-  .about__card {
-    padding: 1rem 2rem; /* Add horizontal padding to ensure text fits within screen */
-  }
+body,
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+
+.mobile-device body, 
+.mobile-device .hero, 
+.mobile-device .hero__container,
+.mobile-device .about__container,
+.mobile-device .about__card,
+.mobile-device .coursework,
+.mobile-device .coursework__container,
+.mobile-device .footer-container,
+.mobile-device .footer__links,
+.mobile-device .footer__link--wrapper,
+.mobile-device .footer__link--items,
+.mobile-device .social__icons,
+.mobile-device .footer__copyright{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.mobile-device .rutgers img{
+  margin: 0 auto;
+}
+
 
 /* Navbar Mobile Styles */
 @media screen and (max-width: 960px) {
