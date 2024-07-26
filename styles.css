@@ -135,21 +135,18 @@ left: 1rem;
 }
 
 
-/* MISC styles mobile */ 
+/* Default Styles */
+.mobile-device .main__content h1 {
+  font-size: 4rem; /* Default size */
+}
 
-.mobile-device .misc__content h1 {
+.mobile-device .main__content p {
   font-size: 2rem; /* Default size */
 }
 
-.mobile-device .misc__content p {
+.mobile-device .main__btn {
   font-size: 1rem; /* Default size */
-  top: 0.25rem;
-}
-
-.mobile-device .misc__btn {
-  font-size: 0.5rem; /* Default size */
-  padding: 5px 10px;
-  margin-top: 20rem;
+  padding: 10px 20px;
 }
 
 .mobile-device .upcoming h1 {
@@ -187,19 +184,8 @@ left: 1rem;
 .mobile-device .blog-post p {
   font-size: 1.5rem; /* Default size */
 }
-fab acon
 
-
-linkedin:
-
-rutgers company  recruiters
-# shit
-
-
-
-
-
- Responsive Styles 
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .mobile-device .main__content h1 {
     font-size: 3rem; /* Adjusted size */
@@ -252,15 +238,15 @@ rutgers company  recruiters
 }
 
 @media screen and (max-width: 480px) {
-  .mobile-device .misc__content h1 {
+  .mobile-device .main__content h1 {
     font-size: 2rem; /* Adjusted size */
   }
 
-  .mobile-device .misc__content p {
+  .mobile-device .main__content p {
     font-size: 1.2rem; /* Adjusted size */
   }
 
-  .mobile-device .misc__btn {
+  .mobile-device .main__btn {
     font-size: 0.8rem; /* Adjusted size */
     padding: 6px 12px;
   }
@@ -301,7 +287,7 @@ rutgers company  recruiters
     font-size: 1rem; /* Adjusted size */
   }
 }
-*/
+
 /* Container Width */
 .mobile-device .container {
   width: 100%;
@@ -325,14 +311,6 @@ rutgers company  recruiters
 .mobile-device .container {
   overflow-x: hidden;
 }
-
-
-
-/* Overflow Handling */
-.mobile-device .container {
-  overflow-x: hidden;
-}
-
 
 
 
