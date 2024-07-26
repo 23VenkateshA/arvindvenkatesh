@@ -133,11 +133,182 @@ left: 1rem;
   width: 100%;
   text-align: center;
 }
-
-.mobile-device .misc__content h1{
-  color: #fff;
+/* Default Styles */
+.mobile-device .main__content h1 {
+  font-size: 4rem; /* Default size */
 }
 
+.mobile-device .main__content p {
+  font-size: 2rem; /* Default size */
+}
+
+.mobile-device .main__btn {
+  font-size: 1rem; /* Default size */
+  padding: 10px 20px;
+}
+
+.mobile-device .upcoming h1 {
+  font-size: 4rem; /* Default size */
+}
+
+.mobile-device .timeline-content h3 {
+  font-size: 2rem; /* Default size */
+}
+
+.mobile-device .timeline-content p {
+  font-size: 1rem; /* Default size */
+}
+
+.mobile-device .details-content h1 {
+  font-size: 3rem; /* Default size */
+}
+
+.mobile-device .details-content p {
+  font-size: 1rem; /* Default size */
+}
+
+.mobile-device .details-content ul li {
+  font-size: 1rem; /* Default size */
+}
+
+.mobile-device .blog-post h2 {
+  font-size: 3rem; /* Default size */
+}
+
+.mobile-device .blog-post .date {
+  font-size: 1.5rem; /* Default size */
+}
+
+.mobile-device .blog-post p {
+  font-size: 1.5rem; /* Default size */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mobile-device .main__content h1 {
+    font-size: 3rem; /* Adjusted size */
+  }
+
+  .mobile-device .main__content p {
+    font-size: 1.5rem; /* Adjusted size */
+  }
+
+  .mobile-device .main__btn {
+    font-size: 0.9rem; /* Adjusted size */
+    padding: 8px 16px;
+  }
+
+  .mobile-device .upcoming h1 {
+    font-size: 3rem; /* Adjusted size */
+  }
+
+  .mobile-device .timeline-content h3 {
+    font-size: 1.5rem; /* Adjusted size */
+  }
+
+  .mobile-device .timeline-content p {
+    font-size: 0.9rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content h1 {
+    font-size: 2.5rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content p {
+    font-size: 0.9rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content ul li {
+    font-size: 0.9rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post h2 {
+    font-size: 2.5rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post .date {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post p {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-device .misc__content h1 {
+    font-size: 2rem; /* Adjusted size */
+  }
+
+  .mobile-device .misc__content p {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+
+  .mobile-device .misc__btn {
+    font-size: 0.8rem; /* Adjusted size */
+    padding: 6px 12px;
+  }
+
+  .mobile-device .upcoming h1 {
+    font-size: 2rem; /* Adjusted size */
+  }
+
+  .mobile-device .timeline-content h3 {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+
+  .mobile-device .timeline-content p {
+    font-size: 0.8rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content h1 {
+    font-size: 2rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content p {
+    font-size: 0.8rem; /* Adjusted size */
+  }
+
+  .mobile-device .details-content ul li {
+    font-size: 0.8rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post h2 {
+    font-size: 2rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post .date {
+    font-size: 1rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post p {
+    font-size: 1rem; /* Adjusted size */
+  }
+}
+
+/* Container Width */
+.mobile-device .container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-device .container {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-device .container {
+    padding: 10px;
+  }
+}
+
+/* Overflow Handling */
+.mobile-device .container {
+  overflow-x: hidden;
+}
 
 
 
