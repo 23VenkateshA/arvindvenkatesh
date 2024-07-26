@@ -77,12 +77,27 @@
       </div>
     </nav>
     <div class="misc">
+                      <script>
+                    // Detect device type
+                    let details = navigator.userAgent;
+                    let regexp = /android|iphone|kindle|ipad/i;
+                    let isMobileDevice = regexp.test(details);
+                  
+                    // Apply class based on device type
+                    if (isMobileDevice) {
+                      document.body.classList.add('mobile-device');
+                    } else {
+                      document.body.classList.add('desktop-device');
+                    }
+                  </script>
+
       <div class="misc__container">
         <div class="misc__content">
           <h1>miscellaneous</h1>
           <p>random ideas, life updates, and photos</p>
           <button class="main__btn"><a href="//vsco.co/arvindvenkatesh/gallery#" target="_blank"> <b>VSCO </b></a>  </button>
         </div>
+
       </div>
     </div>
 
