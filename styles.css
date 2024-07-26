@@ -136,15 +136,15 @@ left: 1rem;
 
 
 /* Default Styles */
-.mobile-device .main__content h1 {
+.mobile-device .misc__content h1 {
   font-size: 4rem; /* Default size */
 }
 
-.mobile-device .main__content p {
+.mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
 }
 
-.mobile-device .main__btn {
+.mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
 }
@@ -187,15 +187,15 @@ left: 1rem;
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .mobile-device .main__content h1 {
+  .mobile-device .misc__content h1 {
     font-size: 3rem; /* Adjusted size */
   }
 
-  .mobile-device .main__content p {
+  .mobile-device .misc__content p {
     font-size: 1.5rem; /* Adjusted size */
   }
 
-  .mobile-device .main__btn {
+  .mobile-device .misc__btn {
     font-size: 0.9rem; /* Adjusted size */
     padding: 8px 16px;
   }
@@ -238,15 +238,15 @@ left: 1rem;
 }
 
 @media screen and (max-width: 480px) {
-  .mobile-device .main__content h1 {
+  .mobile-device .misc__content h1 {
     font-size: 2rem; /* Adjusted size */
   }
 
-  .mobile-device .main__content p {
+  .mobile-device .misc__content p {
     font-size: 1.2rem; /* Adjusted size */
   }
 
-  .mobile-device .main__btn {
+  .mobile-device .misc__btn {
     font-size: 0.8rem; /* Adjusted size */
     padding: 6px 12px;
   }
