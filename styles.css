@@ -147,23 +147,24 @@ left: 1rem;
   }
 
   .navbar__menu {
-    display: grid;
+    display: none;
     grid-template-columns: auto;
     margin: 0;
     width: 100%;
     position: absolute;
-    top: 80px; /* Adjusted to ensure the menu appears below the navbar */
+    top: 80px;
     opacity: 0;
     transition: all 0.5s ease;
-    height: auto; /* Adjusted to allow the menu to expand as needed */
+    height: auto;
     z-index: -1;
     flex-direction: column;
-    align-items: right;
+    align-items: flex-start;
   }
 
   .navbar__menu.active {
+    display: grid;
     background: #322c2b;
-    top: 80px; /* Adjusted to ensure the menu appears below the navbar */
+    top: 80px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
@@ -230,7 +231,7 @@ left: 1rem;
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
+}
   /* Navbar Dropdown */
   .dropdown-content {
     display: none;
