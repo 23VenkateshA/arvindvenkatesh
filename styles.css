@@ -138,11 +138,11 @@ left: 1rem;
 /* MISC styles mobile */ 
 
 .mobile-device .misc__content h1 {
-  font-size: 4rem; /* Default size */
+  font-size: 2rem; /* Default size */
 }
 
 .mobile-device .misc__content p {
-  font-size: 2rem; /* Default size */
+  font-size: 1rem; /* Default size */
   top: 0.5rem
 }
 
