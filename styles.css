@@ -133,21 +133,25 @@ left: 1rem;
   width: 100%;
   text-align: center;
 }
+
+
+/* MISC styles mobile */ 
+
 @media screen and (max-width: 768px) {
   .mobile-device .main__content h1 {
-    font-size: 3rem; /* Adjusted size */
+    font-size: 4rem; /* Adjusted size */
     
   }
 
   .mobile-device .main__content p {
-    font-size: 1.5rem; /* Adjusted size */
-    top: 4rem;
+    font-size: 2rem; /* Adjusted size */
+    top: 7rem;
   }
 
   .mobile-device .main__btn {
     font-size: 0.9rem; /* Adjusted size */
     padding: 8px 16px;
-       top: 8rem;
+      top: 6rem;
   }
 
   .mobile-device .upcoming h1 {
