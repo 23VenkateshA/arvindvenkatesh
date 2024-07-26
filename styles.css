@@ -137,7 +137,7 @@ left: 1rem;
 
 /* Default Styles */
 .mobile-device .main__content h1 {
-  font-size: 2rem; /* Default size */
+  font-size: 4rem; /* Default size */
 }
 
 .mobile-device .main__content p {
@@ -311,6 +311,8 @@ left: 1rem;
 .mobile-device .container {
   overflow-x: hidden;
 }
+
+
 
 
 
