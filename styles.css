@@ -134,6 +134,19 @@ left: 1rem;
   text-align: center;
 }
 
+
+/* Misc Mobile Styles*/ 
+
+  .mobile-device .main__content h1{
+    font-size: 2px;
+  }
+
+
+
+
+
+
+
 /* Navbar Mobile Styles */
 @media screen and (max-width: 960px) {
   .navbar__container {
