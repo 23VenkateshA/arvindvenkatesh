@@ -134,15 +134,15 @@ left: 1rem;
   text-align: center;
 }
 /* Default Styles */
-.mobile-device .main__content h1 {
+.mobile-device .misc__content h1 {
   font-size: 4rem; /* Default size */
 }
 
-.mobile-device .main__content p {
+.mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
 }
 
-.mobile-device .main__btn {
+.mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
 }
