@@ -134,37 +134,9 @@ left: 1rem;
   text-align: center;
 }
 
-
-
 .mobile-device .misc__content h1{
   color: #fff;
 }
-
-
-/* Container Width */
-.mobile-device .container {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile-device .container {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mobile-device .container {
-    padding: 10px;
-  }
-}
-
-/* Overflow Handling */
-.mobile-device .container {
-  overflow-x: hidden;
-}
-
 
 
 
@@ -305,7 +277,7 @@ left: 1rem;
     border: none;
     background-color: #322c2b;
   }
-}
+
 
 /* Start of CSS */
 
@@ -1038,6 +1010,53 @@ left: 1rem;
 }
 
 /* Misc Section  */
+
+
+.misc{
+  background-color: #322c2b;
+}
+
+.misc__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: #322c2b;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.misc__content h1 {
+  font-size: 4rem;
+  color: #e4c59e;
+}
+
+.misc__content h3 {
+  font-size: 2rem;
+}
+
+.misc__content p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 .misc--link {
   color: #fff;
   font-size: 24px;
@@ -1186,3 +1205,7 @@ left: 1rem;
 .blog-post i {
   margin-right: 10px;
 }
+
+
+
+ 
