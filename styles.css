@@ -140,13 +140,13 @@ left: 1rem;
 
 .mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
-  top: 2rem;
+  top: 1rem;
 }
 
 .mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
-  top: 4rem;
+  top: 10rem;
 }
 
 .mobile-device .upcoming h1 {
