@@ -51,6 +51,11 @@ html {
   text-align: center;
 }
 
+.mobile-device .about__card {
+top: -2rem
+
+}
+
 .mobile-device .rutgers img {
   margin: 0 auto;
   margin-top: 1rem;
