@@ -138,20 +138,20 @@ left: 1rem;
 .mobile-device .misc__content h1 {
   font-size: 5rem; /* Default size */
   position: relative;
-  top: -20rem; /* Move the header up */
+  top: -10rem; /* Move the header up */
 }
 
 .mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
   position: relative;
-  top: -5rem; /* Move the text up */
+  top: -5rem; /* Position text above the button */
 }
 
 .mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
   position: relative;
-  top: 10rem; /* Ensure this stays below the text */
+  top: 5rem; /* Adjust position to ensure it stays below the text */
 }
 
 .mobile-device .misc__button {
@@ -199,18 +199,18 @@ left: 1rem;
 @media screen and (max-width: 768px) {
   .mobile-device .misc__content h1 {
     font-size: 3rem; /* Adjusted size */
-    top: -15rem; /* Adjust the position for smaller screens */
+    top: -8rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__content p {
     font-size: 1.5rem; /* Adjusted size */
-    top: -3rem; /* Adjust the position for smaller screens */
+    top: -3rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__btn {
     font-size: 0.9rem; /* Adjusted size */
     padding: 8px 16px;
-    top: 8rem; /* Ensure this stays below the text */
+    top: 3rem; /* Ensure button stays below the text */
   }
 
   .mobile-device .upcoming h1 {
@@ -253,18 +253,18 @@ left: 1rem;
 @media screen and (max-width: 480px) {
   .mobile-device .misc__content h1 {
     font-size: 2rem; /* Adjusted size */
-    top: -10rem; /* Adjust the position for smaller screens */
+    top: -6rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__content p {
     font-size: 1.2rem; /* Adjusted size */
-    top: -2rem; /* Adjust the position for smaller screens */
+    top: -2rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__btn {
     font-size: 0.8rem; /* Adjusted size */
     padding: 6px 12px;
-    top: 6rem; /* Ensure this stays below the text */
+    top: 2rem; /* Ensure button stays below the text */
   }
 
   .mobile-device .upcoming h1 {
