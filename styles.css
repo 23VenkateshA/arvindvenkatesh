@@ -138,6 +138,7 @@ left: 1rem;
 /* Default Styles */
 .mobile-device .misc__content h1 {
   font-size: 5rem; /* Default size */
+  top: -10rem; 
 }
 
 .mobile-device .misc__content p {
