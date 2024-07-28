@@ -332,6 +332,7 @@ left: 1rem;
 
 
 
+
 /* Navbar Mobile Styles */
 @media screen and (max-width: 960px) {
   .navbar__container {
