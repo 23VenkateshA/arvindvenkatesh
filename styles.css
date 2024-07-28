@@ -144,7 +144,7 @@ left: 1rem;
 .mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
   position: relative;
-  top: -10rem; /* Position text above the button */
+  top: -20rem; /* Position text above the button */
 }
 
 .mobile-device .misc__btn {
