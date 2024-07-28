@@ -151,12 +151,12 @@ left: 1rem;
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
   position: relative;
-  top: -8rem; /* Ensure button stays below the text */
+  top: -5rem; /* Ensure button stays below the text */
 }
 
 .mobile-device .misc__button {
   position: relative;
-  top: 10rem;
+  top: -8rem;
 }
 
 .mobile-device .upcoming h1 {
