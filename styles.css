@@ -148,6 +148,12 @@ left: 1rem;
 .mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
+
+}
+
+
+.mobile-device .misc__button {
+
   top: 10rem;
 }
 
