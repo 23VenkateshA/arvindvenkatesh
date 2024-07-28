@@ -136,7 +136,7 @@ left: 1rem;
 
 /* Default Styles */
 .mobile-device .misc__content h1 {
-  font-size: 5rem; /* Default size */
+  font-size: 7rem; /* Default size */
   position: relative;
   top: -10rem; /* Move the header up */
 }
