@@ -136,22 +136,27 @@ left: 1rem;
 
 /* Default Styles */
 .mobile-device .misc__content h1 {
-  font-size: 7rem; /* Default size */
+  font-size: 6rem; /* Increased size */
   position: relative;
-  top: -10rem; /* Move the header up */
+  top: -10rem; /* Adjust position */
 }
 
 .mobile-device .misc__content p {
   font-size: 2rem; /* Default size */
   position: relative;
-  top: -20rem; /* Position text above the button */
+  top: -12rem; /* Position text right underneath the header */
 }
 
 .mobile-device .misc__btn {
   font-size: 1rem; /* Default size */
   padding: 10px 20px;
   position: relative;
-  top: 2rem; /* Adjust position to ensure it stays below the text */
+  top: -5rem; /* Ensure button stays below the text */
+}
+
+.mobile-device .misc__button {
+  position: relative;
+  top: 10rem;
 }
 
 .mobile-device .upcoming h1 {
@@ -193,19 +198,19 @@ left: 1rem;
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .mobile-device .misc__content h1 {
-    font-size: 3rem; /* Adjusted size */
+    font-size: 4rem; /* Adjusted size */
     top: -8rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__content p {
     font-size: 1.5rem; /* Adjusted size */
-    top: -3rem; /* Adjust position for smaller screens */
+    top: -10rem; /* Position text right underneath the header */
   }
 
   .mobile-device .misc__btn {
     font-size: 0.9rem; /* Adjusted size */
     padding: 8px 16px;
-    top: 3rem; /* Ensure button stays below the text */
+    top: -5rem; /* Ensure button stays below the text */
   }
 
   .mobile-device .upcoming h1 {
@@ -247,19 +252,19 @@ left: 1rem;
 
 @media screen and (max-width: 480px) {
   .mobile-device .misc__content h1 {
-    font-size: 2rem; /* Adjusted size */
+    font-size: 3rem; /* Adjusted size */
     top: -6rem; /* Adjust position for smaller screens */
   }
 
   .mobile-device .misc__content p {
     font-size: 1.2rem; /* Adjusted size */
-    top: -2rem; /* Adjust position for smaller screens */
+    top: -8rem; /* Position text right underneath the header */
   }
 
   .mobile-device .misc__btn {
     font-size: 0.8rem; /* Adjusted size */
     padding: 6px 12px;
-    top: 2rem; /* Ensure button stays below the text */
+    top: -5rem; /* Ensure button stays below the text */
   }
 
   .mobile-device .upcoming h1 {
@@ -322,9 +327,6 @@ left: 1rem;
 .mobile-device .container {
   overflow-x: hidden;
 }
-
-
-
 
 
 
