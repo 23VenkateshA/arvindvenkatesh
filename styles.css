@@ -241,7 +241,7 @@ left: 1rem;
   max-width: 100%; /* Ensure it doesn't overflow */
   word-wrap: break-word; /* Ensure long words break properly */
   box-sizing: border-box;
-  margin-bottom: 10rem;
+  top:  -20rem;
 
   
 }
