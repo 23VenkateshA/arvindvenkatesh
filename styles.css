@@ -140,7 +140,12 @@ left: 1rem;
   width: 100%;
   text-align: center;
 }
-
+.mobile-device .social__icon--link {
+    color: #fff; /* Adjust color if needed */
+    margin: 0 10px; /* Add horizontal margin for spacing */
+    text-decoration: none; /* Remove underline from icons */
+    font-size: 1.5rem; /* Adjust icon size if needed */
+}
 
 /* Adjust footer position */
 .footer__container {
