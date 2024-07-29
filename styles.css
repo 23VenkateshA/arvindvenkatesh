@@ -245,6 +245,7 @@ left: 1rem;
   padding-left: 1.5rem;
 }
 
+
 /* General Styles */
 .mobile-device .blog-post {
   width: 90%; /* Ensure the text is not too wide */
@@ -294,23 +295,6 @@ left: 1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .mobile-device .blog-post {
-    width: 100%; /* Adjust width for smaller screens */
-  }
-
-  .mobile-device .blog-post h2 {
-    font-size: 2rem; /* Adjusted size */
-  }
-
-  .mobile-device .blog-post .date {
-    font-size: 1rem; /* Adjusted size */
-  }
-
-  .mobile-device .blog-post p {
-    font-size: 1rem; /* Adjusted size */
-  }
-}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .timeline-item {
