@@ -229,6 +229,7 @@ left: 1rem;
 }
 .mobile-device .details-content{
 width: 100%;
+margin-left: 10rem; 
 }
 
 .mobile-device .details-content h1 {
