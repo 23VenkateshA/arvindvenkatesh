@@ -163,10 +163,13 @@ left: 1rem;
 
 .mobile-device .main__content p {
   font-size: 2rem;
-  margin-bottom: 40px; /* Moved text down more */
+  margin-bottom: 5rem; /* Moved text down more */
   text-align: center;
   word-wrap: break-word; /* Ensured long words break properly */
+  width: 50%;
+
 }
+
 
 .mobile-device .work__btn__container {
   display: flex; /* Highlighted Change */
