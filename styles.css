@@ -162,6 +162,7 @@ left: 1rem;
 
 .mobile-device .upcoming{
   text-align: center;
+  align-items: center;
   margin-bottom: 2rem;
 }
 
@@ -226,10 +227,11 @@ left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10rem; 
 }
 .mobile-device .details-content{
 width: 100%;
-margin-left: 10rem; 
+
 }
 
 .mobile-device .details-content h1 {
