@@ -159,6 +159,8 @@ left: 1rem;
   margin-bottom: 20px;
   position: relative;
   text-align: center;
+  top: -5rem; 
+  right: 5rem;
 }
 
 .mobile-device .main__content p {
