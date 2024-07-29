@@ -228,6 +228,8 @@ left: 1rem;
   margin: 20px;
   border-radius: 5px;
   text-align: center;
+  white-space: normal; /* Allow text to wrap */
+
 }
 
 .mobile-device .workInfo__card h3 {
