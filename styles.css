@@ -170,7 +170,7 @@ left: 1rem;
 
 }
 
-mobile-device .no-wrap {
+.mobile-device .no-wrap {
   white-space: normal; /* Allow text to wrap */
 }
 
