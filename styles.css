@@ -209,7 +209,6 @@ left: 1rem;
   background-color: #322c2b;
   color: white;
   padding: 20px 0;
-  top: -25rem;
   text-align: center;
 }
 
@@ -232,6 +231,7 @@ left: 1rem;
   max-width: 90%; /* Ensure it doesn't overflow */
   word-wrap: break-word; /* Ensure long words break properly */
   box-sizing: border-box;
+  top: -25rem;
 
 }
 
