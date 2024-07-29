@@ -217,26 +217,34 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const timelineItems = document.querySelectorAll(".timeline-item");
-        const detailsContents = document.querySelectorAll(".details-content");
+     <script>
+     document.addEventListener("DOMContentLoaded", function() {
+  const mobileMenu = document.getElementById("mobile-menu");
+  const navbarMenu = document.querySelector(".navbar__menu");
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  const detailsContents = document.querySelectorAll(".details-content");
 
-        timelineItems.forEach(item => {
-          item.addEventListener("click", function() {
-            const target = this.getAttribute("data-target");
-            if (target) {
-              let targetContent = document.getElementById(target);
-              if (targetContent) {
-                detailsContents.forEach(content => {
-                  content.style.display = content === targetContent ? "block" : "none";
-                });
-              }
-            }
+  mobileMenu.addEventListener("click", function() {
+    navbarMenu.classList.toggle("active");
+  });
+
+  timelineItems.forEach(item => {
+    item.addEventListener("click", function() {
+      const target = this.getAttribute("data-target");
+      if (target) {
+        let targetContent = document.getElementById(target);
+        if (targetContent) {
+          detailsContents.forEach(content => {
+            content.style.display = content === targetContent ? "block" : "none";
           });
-        });
-      });
+        }
+      }
+    });
+  });
+});
+
     </script>
+
 
     <script>
 $(document).ready(function() {
