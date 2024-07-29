@@ -222,7 +222,7 @@ left: 1rem;
   display: flex;
   flex-direction: column;
 align-items: flex-start;
-  margin-left: 40rem; /* Remove left margin to center the container */
+  margin-left: 30rem; /* Remove left margin to center the container */
 }
 
 .mobile-device .details-content {
