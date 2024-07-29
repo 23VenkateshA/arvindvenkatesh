@@ -136,6 +136,29 @@ left: 1rem;
 
 
 /* General Styles */
+.mobile-device .main,
+.mobile-device .main__container,
+.mobile-device .main__content,
+.mobile-device .work__btn__container,
+.mobile-device .work__btn,
+.mobile-device .workInfo {
+  position: relative;
+}
+
+.mobile-device .main__content,
+.mobile-device .work__btn__container,
+.mobile-device .work__btn {
+  z-index: 1; /* Ensure it is above other elements */
+}
+
+.mobile-device .workInfo {
+  z-index: 2; /* Ensure it is above other elements */
+  top: -2rem; /* Move the gray box up */
+}
+
+
+
+
 .mobile-device .main {
   display: flex;
   flex-direction: column;
