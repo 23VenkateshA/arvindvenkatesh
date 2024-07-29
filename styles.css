@@ -153,6 +153,7 @@ left: 1rem;
   align-items: center;
   text-align: center;
   padding-bottom: 1rem;
+  z-index: 1; /* Ensure it is above other elements *
 }
 
 .mobile-device .main__content h1 {
@@ -192,6 +193,7 @@ left: 1rem;
   align-items: center; /* Highlighted Change */
   gap: 10px; /* Added space between buttons */
   margin-right: 5rem;
+  z-index: 1;
 }
 
 .mobile-device .work__btn {
@@ -203,6 +205,7 @@ left: 1rem;
   margin: 5px;
   text-align: center;
   margin: 0.5rem 0;
+  z-index: 1;
 }
 
 .mobile-device .work__btn a {
@@ -220,6 +223,7 @@ left: 1rem;
   padding: 20px 0;
   text-align: center;
   margin-top: 1rem;
+  z-index: 2;
   
 }
 
