@@ -245,16 +245,71 @@ left: 1rem;
   padding-left: 1.5rem;
 }
 
+/* General Styles */
+.mobile-device .blog-post {
+  width: 90%; /* Ensure the text is not too wide */
+  margin: 0 auto; /* Center the text container */
+  text-align: left; /* Left align the text */
+  padding: 1rem; /* Add padding for readability */
+  box-sizing: border-box;
+}
+
+/* Heading Styles */
 .mobile-device .blog-post h2 {
   font-size: 3rem; /* Default size */
+  text-align: center; /* Center the headings */
+  margin-bottom: 0.5rem; /* Add space below headings */
 }
 
 .mobile-device .blog-post .date {
   font-size: 1.5rem; /* Default size */
+  text-align: center; /* Center the date */
+  color: #888; /* Add color to the date */
+  margin-bottom: 1rem; /* Add space below date */
 }
 
+/* Paragraph Styles */
 .mobile-device .blog-post p {
   font-size: 1.5rem; /* Default size */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 1rem; /* Add space between paragraphs */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mobile-device .blog-post {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .mobile-device .blog-post h2 {
+    font-size: 2.5rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post .date {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post p {
+    font-size: 1.2rem; /* Adjusted size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-device .blog-post {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .mobile-device .blog-post h2 {
+    font-size: 2rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post .date {
+    font-size: 1rem; /* Adjusted size */
+  }
+
+  .mobile-device .blog-post p {
+    font-size: 1rem; /* Adjusted size */
+  }
 }
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
