@@ -238,10 +238,9 @@ left: 1rem;
   max-width: 90%; /* Ensure it doesn't overflow */
   word-wrap: break-word; /* Ensure long words break properly */
   box-sizing: border-box;
+  top: -10rem;
   
 }
-
-
 .mobile-device .workInfo__card h3 {
   font-size: 1.5rem; /* Reduced size of h3 header */
   text-align: center;
