@@ -183,7 +183,7 @@ left: 1rem;
   flex-direction: column; /* Highlighted Change */
   align-items: center; /* Highlighted Change */
   gap: 10px; /* Added space between buttons */
-  right: 4rem
+  margin-left: 5rem;
 }
 
 .mobile-device .work__btn {
