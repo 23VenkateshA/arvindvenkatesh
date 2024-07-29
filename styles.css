@@ -172,6 +172,12 @@ left: 1rem;
  
 
 }
+.mobile-device .main__content {
+  padding-bottom: 1rem; /* Adjust bottom padding */
+}
+
+
+
 
 .mobile-device .no-wrap {
   white-space: normal; /* Allow text to wrap */
@@ -232,8 +238,7 @@ left: 1rem;
   max-width: 90%; /* Ensure it doesn't overflow */
   word-wrap: break-word; /* Ensure long words break properly */
   box-sizing: border-box;
-  top: -25rem;
-
+  
 }
 
 
