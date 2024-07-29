@@ -216,7 +216,7 @@ left: 1rem;
   color: white;
   padding: 20px 0;
   text-align: center;
-   margin-top: 4rem;
+   margin-bottom: 4rem;
 }
 
 .mobile-device .workInfo__container {
@@ -297,7 +297,7 @@ left: 1rem;
     padding: 15px;
     margin: 15px;
     font-size: 1rem; /* Adjusted size */
-    max-width: 95%; /* Adjusted width for smaller screens */
+    max-width: 100%; /* Adjusted width for smaller screens */
   }
 }
 
