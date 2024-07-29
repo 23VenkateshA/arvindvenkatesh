@@ -7,6 +7,11 @@ html {
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
   background-color: #322c2b; 
+  height: 100%; 
+}
+
+body {
+  overflow-y: auto;
 }
 
 .mobile-device body,
@@ -133,6 +138,32 @@ left: 1rem;
   width: 100%;
   text-align: center;
 }
+
+
+/* Adjust footer position */
+.footer__container {
+  margin-top: 2rem; /* Ensure there's space above the footer */
+}
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 768px) {
+  .hero__content h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 2rem; /* Further adjust font size for smallest screens */
+  }
+}
+
+
+
+
+
+
+
 
 
 /* General Styles */
