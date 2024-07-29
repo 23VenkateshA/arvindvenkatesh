@@ -150,17 +150,23 @@ left: 1rem;
 .mobile-device .main__container {
   width: 100%;
   max-width: 1200px;
+ align-items: center;
+  text-align: center;
 }
 
 .mobile-device .main__content h1 {
   font-size: 5rem; /* Increased size of "work" header */
   margin-bottom: 20px;
   position: relative;
+   align-items: center;
+  text-align: center;
 }
 
 .mobile-device .main__content p {
   font-size: 2rem;
   margin-bottom: 20px;
+   align-items: center;
+  text-align: center;
 }
 
 .mobile-device .work__btn {
@@ -170,6 +176,8 @@ left: 1rem;
   padding: 10px 20px;
   cursor: pointer;
   margin: 5px;
+   align-items: center;
+  text-align: center;
 }
 
 .mobile-device .work__btn a {
@@ -182,7 +190,7 @@ left: 1rem;
 }
 
 .mobile-device .workInfo {
-  background-color: #222;
+  background-color: #322c2b;
   color: white;
   padding: 20px 0;
   text-align: center;
