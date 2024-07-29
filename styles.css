@@ -228,9 +228,11 @@ left: 1rem;
   margin: 20px;
   border-radius: 5px;
   text-align: center;
-  white-space: normal; /* Allow text to wrap */
-
+  max-width: 90%; /* Ensure it doesn't overflow */
+  word-wrap: break-word; /* Ensure long words break properly */
+  box-sizing: border-box;
 }
+
 
 .mobile-device .workInfo__card h3 {
   font-size: 1.5rem; /* Reduced size of h3 header */
@@ -279,16 +281,27 @@ left: 1rem;
     padding: 6px 12px;
   }
 
-  .mobile-device .workInfo__card {
-    margin: 10px;
-    padding: 15px;
-  }
+}
 
-  .mobile-device .workInfo__card h3 {
-    font-size: 1rem; /* Further reduced size for h3 header */
-    word-wrap: break-word; /* Ensured long words break properly */
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mobile-device .workInfo__card {
+    padding: 15px;
+    margin: 15px;
+    font-size: 1rem; /* Adjusted size */
+    max-width: 95%; /* Adjusted width for smaller screens */
   }
 }
+
+@media screen and (max-width: 480px) {
+  .mobile-device .workInfo__card {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.9rem; /* Further reduced size */
+    max-width: 100%; /* Ensure it fits within the screen */
+  }
+}
+
 
 
 
