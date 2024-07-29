@@ -163,10 +163,10 @@ left: 1rem;
 
 .mobile-device .main__content p {
   font-size: 2rem;
-  margin-bottom: 5rem; /* Moved text down more */
+ top: -5rem; /* Moved text down more */
   text-align: center;
   word-wrap: break-word; /* Ensured long words break properly */
-  width: 50%;
+ right: 10rem; 
 
 }
 
