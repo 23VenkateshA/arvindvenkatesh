@@ -174,7 +174,7 @@ left: 1rem;
 
 }
 .mobile-device .main__content {
-  padding-bottom: 1rem; /* Adjust bottom padding */
+  padding-bottom: 0rem; /* Adjust bottom padding */
 }
 
 
