@@ -802,11 +802,13 @@ left: 1rem;
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 50%;
+  margin-right: rem;
   transform: translateX(-50%);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px #322c2b;
   z-index: 1000;
+  text-align: center;
+  margin-left: 2rem;
 }
 
 .dropdown-content a {
