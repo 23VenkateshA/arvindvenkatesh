@@ -658,6 +658,7 @@ left: 1rem;
 .navbar__links,
 .dropbtn,
 .main__btn,
+.work__btn,
 .dropdown-content a {
   font-family: "Didot", "serif";
 }
@@ -1065,14 +1066,14 @@ left: 1rem;
   left: 0;
 }
 
-.work__btn a {
+.main__btn a {
   position: relative;
   z-index: 2;
   color: #fff;
   text-decoration: none;
 }
 
-.work__btn:after {
+.main__btn:after {
   position: absolute;
   content: "";
   top: 0;
@@ -1084,11 +1085,11 @@ left: 1rem;
   border-radius: 4px;
 }
 
-.work__btn:hover {
+.main__btn:hover {
   color: #fff;
 }
 
-.work__btn:hover:after {
+.main__btn:hover:after {
   width: 100%;
 }
 
@@ -1239,6 +1240,54 @@ left: 1rem;
 .highlight {
   color: #b5c18e;
 }
+
+
+/* work button */
+
+.work__btn {
+  font-size: 20px;
+  background-color: #803d3b;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 0rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  bottom: 60px;
+  left: 0;
+}
+
+.work__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.work__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #b5c18e;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.work__btn:hover {
+  color: #fff;
+}
+
+.work__btn:hover:after {
+  width: 100%;
+}
+
+
 
 /* Hobbies Section */
 .hobbies {
