@@ -169,6 +169,7 @@ left: 1rem;
   text-align: center;
   word-wrap: break-word; /* Ensured long words break properly */
   right: 3rem;
+
  
 
 }
@@ -200,6 +201,7 @@ left: 1rem;
   cursor: pointer;
   margin: 5px;
   text-align: center;
+  margin: 0.5rem 0;
 }
 
 .mobile-device .work__btn a {
@@ -216,6 +218,7 @@ left: 1rem;
   color: white;
   padding: 20px 0;
   text-align: center;
+  margin-top: 1rem;
   
 }
 
