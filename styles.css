@@ -223,20 +223,16 @@ left: 1rem;
 }
 
 .mobile-device. details{
-  width: 90%; /* Adjust width */
+ width: 90%; /* Adjust width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20rem; 
+  margin-left: 0; /* Remove left margin to center the container */
 }
-.mobile-device .details-content{
-
-  width: 100%; /* Make sure it fits within the parent */
+.mobile-device .details-content {
+  width: auto; /* Allow content to adjust its width */
   margin: 0 auto; /* Center the red box */
-
-
 }
-
 .mobile-device .details-content h1 {
   font-size: 3rem; 
    margin: 0;
