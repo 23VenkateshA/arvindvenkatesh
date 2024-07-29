@@ -142,6 +142,7 @@ left: 1rem;
   align-items: center;
   padding: 20px;
   text-align: center;
+  overflow: hidden; /* Ensured content doesn't overflow */
 }
 
 .mobile-device .main__container {
@@ -162,8 +163,16 @@ left: 1rem;
 
 .mobile-device .main__content p {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Moved text down more */
   text-align: center;
+  word-wrap: break-word; /* Ensured long words break properly */
+}
+
+.mobile-device .work__btn__container {
+  display: flex; /* Highlighted Change */
+  flex-direction: column; /* Highlighted Change */
+  align-items: center; /* Highlighted Change */
+  gap: 10px; /* Added space between buttons */
 }
 
 .mobile-device .work__btn {
@@ -213,6 +222,7 @@ left: 1rem;
 .mobile-device .workInfo__card h3 {
   font-size: 1.5rem; /* Reduced size of h3 header */
   text-align: center;
+  word-wrap: break-word; /* Ensured long words break properly */
 }
 
 /* Responsive Styles */
@@ -224,7 +234,7 @@ left: 1rem;
 
   .mobile-device .main__content p {
     font-size: 1.5rem; /* Adjusted size */
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Moved text down more */
   }
 
   .mobile-device .work__btn {
@@ -237,6 +247,7 @@ left: 1rem;
 
   .mobile-device .workInfo__card h3 {
     font-size: 1.3rem; /* Adjusted size for h3 header */
+    word-wrap: break-word; /* Ensured long words break properly */
   }
 }
 
@@ -248,7 +259,7 @@ left: 1rem;
 
   .mobile-device .main__content p {
     font-size: 1.2rem; /* Adjusted size */
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Moved text down more */
   }
 
   .mobile-device .work__btn {
@@ -262,6 +273,7 @@ left: 1rem;
 
   .mobile-device .workInfo__card h3 {
     font-size: 1rem; /* Further reduced size for h3 header */
+    word-wrap: break-word; /* Ensured long words break properly */
   }
 }
 
