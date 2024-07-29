@@ -135,9 +135,6 @@ left: 1rem;
 }
 
 
-
-
-
 /* General Styles */
 .mobile-device .main {
   display: flex;
@@ -150,7 +147,9 @@ left: 1rem;
 .mobile-device .main__container {
   width: 100%;
   max-width: 1200px;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -158,14 +157,12 @@ left: 1rem;
   font-size: 5rem; /* Increased size of "work" header */
   margin-bottom: 20px;
   position: relative;
-   align-items: center;
   text-align: center;
 }
 
 .mobile-device .main__content p {
   font-size: 2rem;
   margin-bottom: 20px;
-   align-items: center;
   text-align: center;
 }
 
@@ -176,7 +173,6 @@ left: 1rem;
   padding: 10px 20px;
   cursor: pointer;
   margin: 5px;
-   align-items: center;
   text-align: center;
 }
 
@@ -200,6 +196,10 @@ left: 1rem;
   width: 100%;
   max-width: 800px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .mobile-device .workInfo__card {
@@ -207,10 +207,12 @@ left: 1rem;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .mobile-device .workInfo__card h3 {
   font-size: 1.5rem; /* Reduced size of h3 header */
+  text-align: center;
 }
 
 /* Responsive Styles */
@@ -262,6 +264,9 @@ left: 1rem;
     font-size: 1rem; /* Further reduced size for h3 header */
   }
 }
+
+
+
 
 
 
