@@ -210,6 +210,7 @@ left: 1rem;
   color: white;
   padding: 20px 0;
   text-align: center;
+   margin-top: 2rem;
 }
 
 .mobile-device .workInfo__container {
@@ -240,6 +241,7 @@ left: 1rem;
   font-size: 1.5rem; /* Reduced size of h3 header */
   text-align: center;
   word-wrap: break-word; /* Ensured long words break properly */
+  margin: 0; /* Remove default margin */
 }
 
 /* Responsive Styles */
