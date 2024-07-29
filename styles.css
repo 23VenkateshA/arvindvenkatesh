@@ -136,8 +136,9 @@ left: 1rem;
 
 
 
-/* work styles */
-/* Mobile Styles for Work Page */
+
+
+/* General Styles */
 .mobile-device .main {
   display: flex;
   flex-direction: column;
@@ -152,9 +153,9 @@ left: 1rem;
 }
 
 .mobile-device .main__content h1 {
-  font-size: 4rem;
+  font-size: 5rem; /* Increased size of "work" header */
   margin-bottom: 20px;
-  top: -10rem;
+  position: relative;
 }
 
 .mobile-device .main__content p {
@@ -180,7 +181,6 @@ left: 1rem;
   color: white; /* Ensure text color remains white on hover */
 }
 
-
 .mobile-device .workInfo {
   background-color: #222;
   color: white;
@@ -201,19 +201,20 @@ left: 1rem;
   border-radius: 5px;
 }
 
-
-.mobile-device .workInfo__card h3{
-font-size: 2rem;
+.mobile-device .workInfo__card h3 {
+  font-size: 1.5rem; /* Reduced size of h3 header */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .mobile-device .main__content h1 {
-    font-size: 2rem;
+    font-size: 4rem; /* Adjusted size */
+    margin-bottom: 20px;
   }
 
   .mobile-device .main__content p {
-    font-size: 1rem;
+    font-size: 1.5rem; /* Adjusted size */
+    margin-bottom: 20px;
   }
 
   .mobile-device .work__btn {
@@ -223,15 +224,21 @@ font-size: 2rem;
   .mobile-device .workInfo__container {
     padding: 0 20px;
   }
+
+  .mobile-device .workInfo__card h3 {
+    font-size: 1.3rem; /* Adjusted size for h3 header */
+  }
 }
 
 @media screen and (max-width: 480px) {
   .mobile-device .main__content h1 {
-    font-size: 1.5rem;
+    font-size: 3rem; /* Adjusted size */
+    margin-bottom: 20px;
   }
 
   .mobile-device .main__content p {
-    font-size: 0.9rem;
+    font-size: 1.2rem; /* Adjusted size */
+    margin-bottom: 20px;
   }
 
   .mobile-device .work__btn {
@@ -241,6 +248,10 @@ font-size: 2rem;
   .mobile-device .workInfo__card {
     margin: 10px;
     padding: 15px;
+  }
+
+  .mobile-device .workInfo__card h3 {
+    font-size: 1rem; /* Further reduced size for h3 header */
   }
 }
 
