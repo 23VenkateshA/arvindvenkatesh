@@ -170,7 +170,6 @@ left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%; 
 }
 
 .mobile-device .timeline {
@@ -178,6 +177,7 @@ left: 1rem;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  width: 100%;
  
 }
 
