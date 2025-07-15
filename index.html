@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arvind Venkatesh</title>
+  <link rel="stylesheet" href="styles.css"/>
+ <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#hobbies">hobbies</a></li>
+      <li><a href="#campus">campus involvement</a></li>
+    </ul>
+  </nav>
+
+  <header>
+  <h1 id="typing-text"></h1>
+  <p>a student exploring tech, data, and creativity.</p>
+  
+  <div class="profile-photo">
+    <img src="images/me.jpg" alt="Photo of Arvind Venkatesh" />
+
+  </div>
+</header>
+
+  <section id="about">
+    <h2>about</h2>
+    <p>I’m a Business Analytics and Information Technology student at Rutgers, passionate about solving real-world problems through data and design.</p>
+  </section>
+
+ <section id="work">
+  <h2>work</h2>
+  <div class="timeline">
+    <div class="timeline-left">
+  <div class="timeline-item active" onclick="showJob('bms')">
+    <h3>Bristol Myers Squibb</h3>
+    <p>June 2025 – August 2025</p>
+  </div>
+  <div class="timeline-item" onclick="showJob('simpligov')">
+    <h3>SimpliGov</h3>
+    <p>May 2024 – August 2024</p>
+  </div>
+</div>
+
+
+    <div class="timeline-right">
+      <div class="job-details" id="simpligov">
+        <h3>SimpliGov – Product Intern</h3>
+        <p><strong>June 2025 – Present</strong></p>
+        <ul>
+          <li>Digitized public sector workflows using SimpliGov’s platform.</li>
+          <li>Designed and automated custom forms to reduce paper waste and streamline user experience.</li>
+          <li>Improved form logic to boost data accuracy and workflow efficiency.</li>
+        </ul>
+      </div>
+
+      <div class="job-details hidden" id="bms">
+        <h3>Bristol Myers Squibb – Tech Intern</h3>
+        <p><strong>June 2024 – August 2024</strong></p>
+        <ul>
+          <li>Contributed to the Business Insights and Tech team helping to visualize customer data</li>
+          <li>Built tools for automation and analytics used across pharma business units.</li>
+          <li>Collaborated cross-functionally to identify opportunities for digital transformation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <section id="projects">
+  <h2>projects</h2>
+  <div class="timeline">
+    <div class="timeline-left">
+      <div class="timeline-item active" onclick="showProject('mvp')">
+        <h3>NBA MVP Predictor</h3>
+        <p>Python & ML</p>
+      </div>
+      <div class="timeline-item" onclick="showProject('practicepal')">
+        <h3>Practice Pal</h3>
+        <p>Firebase & JS</p>
+      </div>
+    </div>
+
+    <div class="timeline-right">
+      <div class="job-details" id="mvp">
+        <h3>NBA MVP Predictor</h3>
+        <p><strong>Python, scikit-learn, pandas</strong></p>
+        <ul>
+          <li>Trained a machine learning model to forecast NBA MVPs based on historical player stats and advanced metrics.</li>
+          <li>Used scraping scripts to collect and preprocess data from Basketball Reference.</li>
+          <li>Visualized model insights to highlight key features like win shares and usage rate.</li>
+        </ul>
+      </div>
+
+      <div class="job-details hidden" id="practicepal">
+        <h3>Practice Pal</h3>
+        <p><strong>Firebase, JavaScript, Figma</strong></p>
+        <ul>
+          <li>Developed a practice tracking app for musicians to log sessions and monitor consistency.</li>
+          <li>Designed the UI in Figma with a clean, minimalist style for mobile devices.</li>
+          <li>Implemented Firebase Auth and Firestore to securely store and sync user data.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="hobbies">
+  <h2>hobbies</h2>
+
+  <div class="work-card">
+    <h3>violin</h3>
+    <p>
+      I’ve played Indian classical violin for over 7 years and have performed numerous concerts in the U.S. and India!
+      Violin has remained the one daily constant in my life and has become engrained into my routine.
+    </p>
+  </div>
+
+  <div class="work-card">
+    <h3>basketball</h3>
+    <p>
+      My favorite sports for as long as I can remember and a hobby that I can share with a majority of my friends -- 
+      whether that be playing pick-up or watching the NBA playoffs in the middle of finals season.
+    </p>
+  </div>
+
+  <div class="work-card">
+    <h3>chess</h3>
+    <p>
+     I got into chess in highschool and became super involved during COVID. It has taught me 
+     so much about patience and the importance of not overlooking the little things.
+    </p>
+  </div>
+
+  <div class="work-card">
+    <h3>yoga</h3>
+    <p>
+      Started yoga last summer as a way to gain more flexibiltiy in my hips and hamstrings. Because I sit with my
+      legs crossed while playing violin, sitting for long hours has remained a challenge for as long as I can remember. 
+      Yoga has really helped to mitigate these issues.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="campus">
+  <h2>campus involvement</h2>
+
+  <div class="work-card">
+    <h3>Phi Chi Theta – Director of Fundraising</h3>
+    <p>
+      Lead fundraising initiatives for a professional business fraternity. Helped to raise funds and plan new events that involved the entire brotherhood.
+    </p>
+  </div>
+
+  <div class="work-card">
+    <h3>RU Dhol Effect – Co-President </h3>
+    <p>
+      Coordinate performances, manage rehearsals, and organize logistics for our South Asian fusion band. This group has given me some of my favorite memories at Rutgers.
+    </p>
+  </div>
+
+  <div class="work-card">
+    <h3>BITS Club – Tech & Business Initiatives</h3>
+    <p>
+      Worked on modernizing the club website and continuing to add resources for the overall tech community of students at Rutgers
+    </p>
+  </div>
+</section>
+
+
+<section id="photos">
+  <h2>recent photos</h2>
+  <div class="photo-grid">
+    <div class="polaroid">
+      <a href="images/IMG_0434.jpg" class="lightbox">
+        <img src="images/IMG_0434.jpg" alt="Photo 1">
+      </a>
+      <p>New York Skyline</p>
+    </div>
+
+    <div class="polaroid">
+      <a href="images/IMG_0546.jpg" class="lightbox">
+        <img src="images/IMG_0546.jpg" alt="Photo 2">
+      </a>
+      <p> Beach House </p>
+    </div>
+
+    <div class="polaroid">
+      <a href="images/IMG_0351.JPG" class="lightbox">
+        <img src="images/IMG_0351.JPG" alt="Photo 3">
+      </a>
+      <p> Madison Square Garden </p>
+    </div>
+
+    <!-- Add more as needed -->
+  </div>
+</section>
+
+
+
+
+
+
+  <footer>
+  <div class="footer__icons">
+    <a href="mailto:arvind.venkat28@gmail.com" target="_blank" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/arvindvenkatesh36/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/arvindvenkatesh36/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@arvindvenkatesh75" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://github.com/23VenkateshA" target="_blank" aria-label="GitHub">
+  <i class="fab fa-github"></i>
+  </a>
+
+  </div>
+  <p>&copy; 2025 Arvind Venkatesh</p>
+</footer>
+
+
+<script src="app.js"></script>
+
+
+<div id="lightbox-overlay" class="hidden">
+  <img id="lightbox-image" src="" alt="Enlarged photo">
+</div>
+
+
+</body>
+</html>
