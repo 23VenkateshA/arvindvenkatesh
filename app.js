@@ -45,18 +45,3 @@ function showProject(projectId) {
   event.currentTarget.classList.add("active");
 }
 
-// LIGHTBOX
-document.querySelectorAll('.lightbox').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const src = link.getAttribute('href');
-    const overlay = document.getElementById('lightbox-overlay');
-    const image = document.getElementById('lightbox-image');
-    image.src = src;
-    overlay.classList.remove('hidden');
-  });
-});
-
-document.getElementById('lightbox-overlay').addEventListener('click', () => {
-  document.getElementById('lightbox-overlay').classList.add('hidden');
-});
