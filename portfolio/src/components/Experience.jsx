@@ -28,8 +28,10 @@ export default function Experience() {
 
       <div className="mt-12">
         <h3 className="text-sm font-medium uppercase tracking-[0.2em] text-accent">Education</h3>
-        <p className="mt-3 font-serif text-xl">Rutgers University</p>
-        <p className="mt-1 text-ink-soft">B.S. Business Analytics &amp; Information Technology</p>
+        <p className="mt-3 font-serif text-xl">Rutgers University — Honors College</p>
+        <p className="mt-1 text-ink-soft">
+          B.S. Business Analytics &amp; Information Technology, and Data Science · Class of 2027
+        </p>
       </div>
     </Section>
   )

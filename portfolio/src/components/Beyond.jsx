@@ -23,8 +23,8 @@ export default function Beyond() {
       </ul>
       <p className="mt-10 max-w-xl leading-relaxed text-ink-soft">
         Seven-plus years of Indian classical violin taught me discipline; basketball taught me to
-        love the numbers behind the game; chess and yoga keep the thinking sharp and the posture
-        honest.
+        love the numbers behind the game; chess, the weight room, and the track keep the thinking
+        sharp and the progress measurable.
       </p>
     </Section>
   )

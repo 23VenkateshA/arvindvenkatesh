@@ -32,15 +32,6 @@ body {
   border-radius: 2px;
 }
 
-/* Hide the native cursor only on precise pointers when the custom one is active */
-@media (pointer: fine) {
-  body.custom-cursor,
-  body.custom-cursor a,
-  body.custom-cursor button {
-    cursor: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

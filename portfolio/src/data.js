@@ -1,21 +1,21 @@
 export const experience = [
   {
     company: 'Capital One',
-    role: 'Incoming',
+    role: 'Product Management Intern',
     summary:
-      'Bringing an analytics-first mindset to one of the most data-driven companies in financial services.',
+      'Leading requirements gathering and PRD development for a voice-prompted AI banking assistant — partnering with engineering and design on voice interaction flows and using SQL and Python to build a data-driven product roadmap.',
   },
   {
-    company: 'Bristol-Myers Squibb',
-    role: 'DADP Intern · Business Insights & Tech',
+    company: 'Bristol Myers Squibb',
+    role: 'Data Analyst Intern',
     summary:
-      'Contributed to the Business Insights and Tech team as a Data & Digital Acceleration Program intern, turning enterprise data into decisions.',
+      'Built a Power BI dashboard tracking 10+ productivity metrics, deployed AI agents with Microsoft Copilot Studio to automate repetitive workflows, and designed automated pipelines with Power Automate and SharePoint.',
   },
   {
-    company: 'SimpliGov',
-    role: 'Digital Transformation Intern',
+    company: "L'Oréal",
+    role: "Product Strategy Fellow · L'Oréal Brandstorm",
     summary:
-      'Helped government agencies modernize workflows, translating messy manual processes into clean digital ones.',
+      'Directed a cross-functional team in a 9-month global product innovation competition, developing a go-to-market strategy evaluated against 150+ universities across 64 countries.',
   },
 ]
 
@@ -36,19 +36,28 @@ export const projects = [
 
 export const leadership = [
   {
-    org: 'Phi Chi Theta',
-    role: 'Director of Fundraising',
-    detail: 'Leading fundraising strategy for a professional business fraternity.',
-  },
-  {
     org: 'RU Dhol Effect',
-    role: 'Co-President',
-    detail: 'Co-leading Rutgers’ competitive South Asian percussion ensemble.',
+    role: 'President',
+    detail:
+      'Leading Rutgers’ competitive South Asian percussion ensemble — 15+ performances a semester and partnerships with 7 external organizations.',
   },
   {
-    org: 'BITS Club',
-    role: 'Member',
-    detail: 'Business Information Technology Society — where business meets tech on campus.',
+    org: 'BITS',
+    role: 'VP of Web Development',
+    detail:
+      'Migrated the Business Information Technology Society site to Next.js and Supabase and led a redesign serving 500+ IT students.',
+  },
+  {
+    org: 'Phi Chi Theta',
+    role: 'Professional Development Chair',
+    detail:
+      'Running professional development for a 60+ member business fraternity — recruiting workshops, branding, and an 85% internship placement rate.',
+  },
+  {
+    org: 'Verizon Case Competition',
+    role: 'Winning Team',
+    detail:
+      'One of 3 winning teams out of 90 across Rutgers, leading product ideation and go-to-market strategy judged by Verizon professionals.',
   },
 ]
 
@@ -56,5 +65,6 @@ export const hobbies = [
   { label: 'Indian classical violin', note: '7+ years' },
   { label: 'Basketball & the NBA', note: 'analyst at heart' },
   { label: 'Chess', note: 'always thinking two moves ahead' },
-  { label: 'Yoga', note: 'balance, on and off screen' },
+  { label: 'Lifting & track', note: 'progressive overload, applied' },
+  { label: 'Travel', note: 'collecting places' },
 ]

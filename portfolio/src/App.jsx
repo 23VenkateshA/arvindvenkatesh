@@ -1,4 +1,3 @@
-import Cursor from './components/Cursor.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import Experience from './components/Experience.jsx'
@@ -15,7 +14,6 @@ export default function App() {
       >
         Skip to content
       </a>
-      <Cursor />
       <Nav />
       <main id="main">
         <Hero />
@@ -27,9 +25,17 @@ export default function App() {
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-4 px-6 py-10 text-sm text-ink-soft">
           <p>© {new Date().getFullYear()} Arvind Venkatesh</p>
-          <a href="mailto:arvind.venkat28@gmail.com" className="link-slide text-accent">
-            arvind.venkat28@gmail.com
-          </a>
+          <div className="flex gap-6">
+            <a href="mailto:arvind.venkat28@gmail.com" className="link-slide text-accent">
+              arvind.venkat28@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/arvindvenkatesh36"
+              className="link-slide text-accent"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </footer>
     </>
