@@ -2,6 +2,12 @@
 
 One architectural decision or lesson per entry, newest first.
 
+## Restart the Vite dev server after editing vite.config.js
+After the `base` option was added, a lingering dev-server process served raw, unprocessed Tailwind CSS (`@theme` blocks reaching the browser → fully unstyled page). Production builds were unaffected. If the preview suddenly loses all styling, restart the dev server before debugging the code.
+
+## Custom cursor removed (July 2026)
+The spring-follow dot cursor was removed at Arvind's request. If re-adding pointer effects, the old implementation lived in `portfolio/src/components/Cursor.jsx` (git history) with a `body.custom-cursor` CSS gate.
+
 ## New app lives in `portfolio/`, old static site untouched
 The repo root was mid-rebase with a merge conflict in the old static `index.html`. The React rebuild was scaffolded in `portfolio/` (Vite + React 19 + Tailwind v4 + Framer Motion) so the git state and legacy site stay intact until the rebase is resolved and the old files are retired.
 
