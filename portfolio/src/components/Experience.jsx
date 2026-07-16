@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <Section id="experience" eyebrow="Experience" title="Where I've worked">
       <ol className="divide-y divide-line border-y border-line">
-        {experience.map(({ company, role, summary }, i) => (
+        {experience.map(({ company, role, highlights }, i) => (
           <motion.li
             key={company}
             initial={{ opacity: 0, x: -16 }}
@@ -21,7 +21,14 @@ export default function Experience() {
               </h3>
               <p className="text-sm font-medium text-ink-soft">{role}</p>
             </div>
-            <p className="mt-3 max-w-xl leading-relaxed text-ink-soft">{summary}</p>
+            <ul className="mt-3 max-w-xl space-y-2">
+              {highlights.map((point) => (
+                <li key={point} className="flex gap-3 leading-relaxed text-ink-soft">
+                  <span aria-hidden="true" className="mt-[0.6em] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                  {point}
+                </li>
+              ))}
+            </ul>
           </motion.li>
         ))}
       </ol>

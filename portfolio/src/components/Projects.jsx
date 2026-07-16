@@ -11,7 +11,7 @@ export default function Projects() {
             key={name}
             whileHover={{ y: -6 }}
             transition={{ type: 'spring', stiffness: 300, damping: 22 }}
-            className="flex flex-col rounded-lg border border-line bg-white/50 p-7"
+            className="flex flex-col rounded-lg border border-line bg-surface/70 p-7"
           >
             <h3 className="font-serif text-2xl">{name}</h3>
             <p className="mt-3 flex-1 leading-relaxed text-ink-soft">{description}</p>

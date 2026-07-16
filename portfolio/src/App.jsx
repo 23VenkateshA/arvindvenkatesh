@@ -1,9 +1,8 @@
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
-import Hero from './components/Hero.jsx'
-import Experience from './components/Experience.jsx'
-import Projects from './components/Projects.jsx'
-import Leadership from './components/Leadership.jsx'
-import Beyond from './components/Beyond.jsx'
+import Home from './pages/Home.jsx'
+import BlogList from './pages/BlogList.jsx'
+import BlogPost from './pages/BlogPost.jsx'
 
 export default function App() {
   return (
@@ -16,11 +15,11 @@ export default function App() {
       </a>
       <Nav />
       <main id="main">
-        <Hero />
-        <Experience />
-        <Projects />
-        <Leadership />
-        <Beyond />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
       </main>
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-4 px-6 py-10 text-sm text-ink-soft">

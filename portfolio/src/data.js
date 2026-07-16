@@ -2,20 +2,24 @@ export const experience = [
   {
     company: 'Capital One',
     role: 'Product Management Intern',
-    summary:
+    // TODO(Arvind): split into sharper, outcome-focused bullets — layout already supports it.
+    highlights: [
       'Leading requirements gathering and PRD development for a voice-prompted AI banking assistant — partnering with engineering and design on voice interaction flows and using SQL and Python to build a data-driven product roadmap.',
+    ],
   },
   {
     company: 'Bristol Myers Squibb',
     role: 'Data Analyst Intern',
-    summary:
+    highlights: [
       'Built a Power BI dashboard tracking 10+ productivity metrics, deployed AI agents with Microsoft Copilot Studio to automate repetitive workflows, and designed automated pipelines with Power Automate and SharePoint.',
+    ],
   },
   {
     company: "L'Oréal",
     role: "Product Strategy Fellow · L'Oréal Brandstorm",
-    summary:
+    highlights: [
       'Directed a cross-functional team in a 9-month global product innovation competition, developing a go-to-market strategy evaluated against 150+ universities across 64 countries.',
+    ],
   },
 ]
 

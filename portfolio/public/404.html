@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arvind Venkatesh</title>
+    <script type="text/javascript">
+      // GitHub Pages has no server-side rewrites, so a deep link like
+      // /arvindvenkatesh/blog/hello-world 404s on refresh. This redirects
+      // through a query string that index.html decodes back into the real
+      // path via history.replaceState. Not needed on Vercel (see vercel.json),
+      // but harmless there too since it only fires on an actual 404.
+      var isGithubPages = window.location.hostname.endsWith('github.io')
+      var pathSegmentsToKeep = isGithubPages ? 1 : 0
+      var l = window.location
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
