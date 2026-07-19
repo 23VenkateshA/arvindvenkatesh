@@ -38,7 +38,6 @@ function RxLabel() {
       </div>
       <div className="space-y-1.5 px-4 py-4 font-mono text-[0.7rem] leading-relaxed">
         <p>RX #0010 — PRODUCTIVITY</p>
-        <p>TAKE 10+ METRICS DAILY</p>
         <p>W/ POWER BI + COPILOT</p>
         <p className="text-red">REFILLS: AUTOMATED (∞)</p>
       </div>
@@ -111,7 +110,6 @@ export default function Experience() {
                 className="shrink-0"
               >
                 <Obj />
-                <p className="font-hand mt-4 text-center text-sm text-tan">{job.objectCaption}</p>
               </motion.div>
 
               <div className="text-center sm:text-left">
@@ -120,7 +118,6 @@ export default function Experience() {
                   {job.role}
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-tan">{job.blurb}</p>
-                <p className="font-display mt-5 text-xl italic text-cream">{job.learnt}</p>
                 <div className="mt-5">
                   <p className="font-hand text-base text-red">notable work</p>
                   <ul className="mt-2 space-y-1 font-mono text-xs text-tan">

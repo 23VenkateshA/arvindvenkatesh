@@ -31,20 +31,18 @@ export default function Hero() {
           variants={item}
           className="font-display mt-10 text-5xl leading-[1.05] text-cream sm:text-7xl"
         >
-          Things I&rsquo;ve built,
-          <br />
-          lessons I&rsquo;ve learnt
+          Arvind Venkatesh
         </motion.h1>
 
         <motion.p variants={item} className="font-hand mt-6 text-lg text-tan">
-          Arvind Venkatesh &middot; Business Analytics &amp; IT @ Rutgers &rsquo;27
+          Business Analytics &amp; Information Technology &middot; Data Science minor
         </motion.p>
 
         <motion.figure
           variants={item}
           whileHover={reduceMotion ? undefined : { rotate: 0, y: -4 }}
           transition={{ type: 'spring', stiffness: 220, damping: 16 }}
-          className="mt-12 w-48 rotate-[-3deg] bg-paper p-2.5 pb-3 shadow-xl sm:w-56"
+          className="mt-12 w-48 rotate-[-3deg] bg-paper p-2.5 pb-9 shadow-xl sm:w-56"
         >
           <img
             src={heroPhoto}
@@ -53,9 +51,6 @@ export default function Hero() {
             height={832}
             className="aspect-[3/4] w-full object-cover"
           />
-          <figcaption className="font-hand mt-2.5 text-sm leading-snug text-night">
-            hi, that&rsquo;s me — violinist, basketball analyst at heart
-          </figcaption>
         </motion.figure>
 
         <motion.a

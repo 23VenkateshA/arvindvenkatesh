@@ -25,8 +25,7 @@ export default function Gallery() {
   return (
     <Section id="photos" eyebrow="frames from the road" title="Places I've been">
       <p className="mx-auto max-w-xl text-center text-sm leading-relaxed text-tan">
-        Travel is one of my hobbies and I like carrying a camera along for it — a handful of
-        favorites, straight off the fridge door.
+        A handful of favorites from my camera.
       </p>
 
       <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-10">

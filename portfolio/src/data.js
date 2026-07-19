@@ -5,13 +5,11 @@ export const experience = [
     object: 'card',
     blurb:
       'Leading requirements gathering and PRD development for a voice-prompted AI banking assistant — partnering with engineering and design on voice interaction flows.',
-    learnt: 'Learnt to turn an ambiguous problem into a roadmap',
     notable: [
       'Voice AI assistant PRD',
       'Voice interaction flows',
       'SQL + Python product roadmap',
     ],
-    objectCaption: 'the internship card',
   },
   {
     company: 'Bristol Myers Squibb',
@@ -19,13 +17,11 @@ export const experience = [
     object: 'rx',
     blurb:
       'Built a Power BI dashboard tracking 10+ productivity metrics and deployed AI agents with Microsoft Copilot Studio to automate repetitive workflows.',
-    learnt: 'Learnt that automation is a product too',
     notable: [
       'Power BI productivity dashboard',
       'Copilot Studio AI agents',
       'Power Automate + SharePoint pipelines',
     ],
-    objectCaption: 'prescribed: automation',
   },
   {
     company: "L'Oréal",
@@ -33,13 +29,11 @@ export const experience = [
     object: 'tag',
     blurb:
       'Directed a cross-functional team in a 9-month global product innovation competition, developing a go-to-market strategy evaluated against 150+ universities across 64 countries.',
-    learnt: 'Learnt to ship a pitch the whole world can judge',
     notable: [
       'Go-to-market strategy',
       'Cross-functional team leadership',
       '9-month global competition',
     ],
-    objectCaption: 'the global pitch tag',
   },
 ]
 
@@ -59,11 +53,11 @@ export const sideQuests = [
     tags: 'Firebase · JavaScript · Figma',
   },
   {
-    name: 'RU Dhol Effect',
+    name: 'RU Effect',
     role: 'President',
     detail:
       'Leading Rutgers’ competitive South Asian percussion ensemble — 15+ performances a semester and partnerships with 7 external organizations.',
-    tags: 'dhol · 15+ shows a semester',
+    tags: '15+ shows a semester',
   },
   {
     name: 'BITS',

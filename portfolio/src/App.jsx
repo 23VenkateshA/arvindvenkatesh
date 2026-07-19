@@ -1,49 +1,46 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import StampBorder from './components/StampBorder.jsx'
-import { RoughDefs } from './components/Stamps.jsx'
+import {
+  RoughDefs,
+  MailIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  TikTokIcon,
+} from './components/Stamps.jsx'
 import Home from './pages/Home.jsx'
 import BlogList from './pages/BlogList.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 
-// Sargam — the Indian classical scale I grew up practicing on violin.
-const marqueeLine = 'sa · ri · ga · ma · pa · dha · ni · sa'
+const socials = [
+  { label: 'Email', href: 'mailto:arvind.venkat28@gmail.com', Icon: MailIcon },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/arvindvenkatesh36', Icon: LinkedInIcon },
+  // TODO(Arvind): drop in the real profile URLs
+  { label: 'Instagram', href: '#', Icon: InstagramIcon },
+  { label: 'TikTok', href: '#', Icon: TikTokIcon },
+]
 
 function Footer() {
   return (
-    <footer id="connect" className="mt-10">
-      <div className="mx-auto max-w-3xl px-6 pb-16 pt-10 text-center">
+    <footer id="connect" className="mt-10 border-t border-line">
+      <div className="mx-auto max-w-3xl px-6 pb-14 pt-12 text-center">
         <p className="font-hand text-lg text-red">say hello</p>
-        <h2 className="font-display mt-2 text-4xl text-cream sm:text-5xl">
-          Let&rsquo;s make something
-        </h2>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
-          <a
-            href="mailto:arvind.venkat28@gmail.com"
-            className="font-hand link-slide text-lg text-cream hover:text-red"
-          >
-            arvind.venkat28@gmail.com
-          </a>
-          <a
-            href="https://linkedin.com/in/arvindvenkatesh36"
-            className="font-hand link-slide text-lg text-cream hover:text-red"
-          >
-            LinkedIn
-          </a>
+        <div className="mt-6 flex items-center justify-center gap-8">
+          {socials.map(({ label, href, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              aria-label={label}
+              title={label}
+              className="text-cream transition-colors hover:text-red"
+            >
+              <Icon className="h-7 w-7" />
+            </a>
+          ))}
         </div>
         <p className="mt-10 font-mono text-xs text-tan/60">
           © {new Date().getFullYear()} Arvind Venkatesh
         </p>
-      </div>
-
-      <div aria-hidden="true" className="overflow-hidden border-t border-line py-4">
-        <div className="marquee-x-track">
-          {[0, 1].map((copy) => (
-            <p key={copy} className="font-hand shrink-0 whitespace-nowrap text-lg text-tan/70">
-              {Array.from({ length: 6 }, () => `🎶 ${marqueeLine} 🎻 `).join(' ')}
-            </p>
-          ))}
-        </div>
       </div>
     </footer>
   )

@@ -201,6 +201,50 @@ export function Smiley({ className }) {
   )
 }
 
+// Hand-drawn social icons for the footer.
+export function MailIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none"
+      stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="5.5" width="18" height="13" rx="2.5" />
+      <path d="M4.5 7.5 L12 13 L19.5 7.5" />
+    </svg>
+  )
+}
+
+export function LinkedInIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none"
+      stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="3" />
+      <path d="M8 10.5 V16.5" />
+      <circle cx="8" cy="7.6" r="0.4" fill="currentColor" />
+      <path d="M12 16.5 V10.5 M12 12.8 c0 -1.5 4 -2.3 4 0.4 V16.5" />
+    </svg>
+  )
+}
+
+export function InstagramIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none"
+      stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+      <circle cx="12" cy="12" r="3.8" />
+      <circle cx="17" cy="7" r="0.5" fill="currentColor" />
+    </svg>
+  )
+}
+
+export function TikTokIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none"
+      stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M13.5 4 v10.8 a3.4 3.4 0 1 1 -3.4 -3.4" />
+      <path d="M13.5 6 c0.8 2.2 2.6 3.6 5 3.8" />
+    </svg>
+  )
+}
+
 // Deterministic fake barcode for the scrapbook objects.
 const BAR_WIDTHS = [3, 1, 2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 1, 2, 1, 3, 2, 1, 2, 1]
 

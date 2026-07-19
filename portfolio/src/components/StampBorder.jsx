@@ -11,15 +11,15 @@ import {
 } from './Stamps.jsx'
 
 const stamps = [
-  { Icon: ViolinStamp, caption: '7 yrs of violin' },
-  { Icon: BasketballStamp, caption: 'hoops nerd' },
-  { Icon: ChartStamp, caption: 'data kid' },
-  { Icon: PlaneStamp, caption: 'collecting places' },
-  { Icon: PawnStamp, caption: 'two moves ahead' },
-  { Icon: DholStamp, caption: 'dhol season' },
-  { Icon: CameraStamp, caption: 'frames on film' },
-  { Icon: DumbbellStamp, caption: 'progressive overload' },
-  { Icon: CursorStamp, caption: 'digital world' },
+  { Icon: ViolinStamp },
+  { Icon: BasketballStamp },
+  { Icon: ChartStamp },
+  { Icon: PlaneStamp },
+  { Icon: PawnStamp },
+  { Icon: DholStamp },
+  { Icon: CameraStamp },
+  { Icon: DumbbellStamp },
+  { Icon: CursorStamp },
 ]
 
 function Column({ side }) {
@@ -35,13 +35,8 @@ function Column({ side }) {
       <div className="marquee-y-track items-center gap-8 px-3 py-4">
         {sets.map((set) => (
           <div key={set} className="flex flex-col items-center gap-8">
-            {stamps.map(({ Icon, caption }, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <Icon className="w-14" />
-                <p className="font-hand mt-1 max-w-[5rem] text-center text-[0.65rem] leading-tight text-tan/70">
-                  {caption}
-                </p>
-              </div>
+            {stamps.map(({ Icon }, i) => (
+              <Icon key={i} className="w-14" />
             ))}
           </div>
         ))}
