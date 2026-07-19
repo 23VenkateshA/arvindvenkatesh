@@ -1,14 +1,25 @@
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Smiley } from './Stamps.jsx'
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { Smiley, FaceDoodle, CONNECT_CIRCLE_PATH } from './Stamps.jsx'
+import { socials } from '../data/socials.js'
 
 const links = [
   { to: '/', label: 'Work' },
   { to: '/blog', label: 'Blog' },
-  { to: '/#connect', label: 'Connect', hash: true },
 ]
+
+// Sideways scatter so the icon column reads hand-placed, not machine-stacked.
+const iconOffsets = [-10, 10, -7, 12]
 
 export default function Nav() {
   const { pathname } = useLocation()
+  const [connectOpen, setConnectOpen] = useState(false)
+  const reduceMotion = useReducedMotion()
+  // On hover-capable devices mouseenter already opens the panel, so a click
+  // must not toggle it straight back closed; on touch, tap toggles.
+  const canHover =
+    typeof window !== 'undefined' && window.matchMedia('(hover: hover)').matches
 
   return (
     <header className="relative z-40">
@@ -19,13 +30,9 @@ export default function Nav() {
         <Link to="/" aria-label="Back to top" className="text-cream transition-colors hover:text-red">
           <Smiley className="h-6 w-6" />
         </Link>
-        {links.map(({ to, label, hash }) => {
-          const active = !hash && (to === '/' ? pathname === '/' : pathname.startsWith(to))
-          return hash && pathname === '/' ? (
-            <a key={label} href="#connect" className="font-hand text-lg text-cream transition-colors hover:text-red">
-              {label}
-            </a>
-          ) : (
+        {links.map(({ to, label }) => {
+          const active = to === '/' ? pathname === '/' : pathname.startsWith(to)
+          return (
             <Link
               key={label}
               to={to}
@@ -37,6 +44,89 @@ export default function Nav() {
             </Link>
           )
         })}
+
+        <div
+          className="relative"
+          onMouseEnter={() => setConnectOpen(true)}
+          onMouseLeave={() => setConnectOpen(false)}
+        >
+          <button
+            type="button"
+            onClick={() => setConnectOpen((v) => (canHover ? true : !v))}
+            aria-expanded={connectOpen}
+            aria-label={connectOpen ? 'Hide contact links' : 'Show contact links'}
+            className="font-hand relative px-1 text-lg text-cream transition-colors hover:text-red"
+          >
+            Connect
+            <AnimatePresence>
+              {connectOpen && (
+                <svg
+                  viewBox="0 0 136 52"
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -left-4 -top-2.5 h-[calc(100%+20px)] w-[calc(100%+32px)] text-cream"
+                >
+                  <motion.path
+                    d={CONNECT_CIRCLE_PATH}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={reduceMotion ? { duration: 0 } : { duration: 0.45, ease: 'easeOut' }}
+                  />
+                </svg>
+              )}
+            </AnimatePresence>
+          </button>
+
+          <AnimatePresence>
+            {connectOpen && (
+              <ul className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3">
+                <div className="relative flex flex-col items-center gap-4">
+                  {socials.map(({ label, href, Icon }, i) => (
+                    <motion.li
+                      key={label}
+                      initial={{ opacity: 0, y: -14, scale: 0.4, rotate: -10 }}
+                      animate={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
+                      exit={{ opacity: 0, y: -8, scale: 0.4 }}
+                      transition={
+                        reduceMotion
+                          ? { duration: 0 }
+                          : { type: 'spring', stiffness: 420, damping: 24, delay: i * 0.05 }
+                      }
+                      style={{ x: iconOffsets[i % iconOffsets.length] }}
+                    >
+                      <a
+                        href={href}
+                        aria-label={label}
+                        title={label}
+                        className="block text-cream transition-colors hover:text-red"
+                      >
+                        <Icon className="h-7 w-7" />
+                      </a>
+                    </motion.li>
+                  ))}
+                  <motion.li
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -left-14 top-1/2 -translate-y-1/2"
+                    initial={{ opacity: 0, scale: 0.4, rotate: -14 }}
+                    animate={{ opacity: 1, scale: 1, rotate: -6 }}
+                    exit={{ opacity: 0, scale: 0.4 }}
+                    transition={
+                      reduceMotion
+                        ? { duration: 0 }
+                        : { type: 'spring', stiffness: 380, damping: 22, delay: 0.22 }
+                    }
+                  >
+                    <FaceDoodle className="h-12 w-12 text-cream" />
+                  </motion.li>
+                </div>
+              </ul>
+            )}
+          </AnimatePresence>
+        </div>
       </nav>
     </header>
   )

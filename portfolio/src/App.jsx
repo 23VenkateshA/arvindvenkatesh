@@ -1,23 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import StampBorder from './components/StampBorder.jsx'
-import {
-  RoughDefs,
-  MailIcon,
-  LinkedInIcon,
-  InstagramIcon,
-  TikTokIcon,
-} from './components/Stamps.jsx'
+import { RoughDefs } from './components/Stamps.jsx'
+import { socials } from './data/socials.js'
 import Home from './pages/Home.jsx'
 import BlogList from './pages/BlogList.jsx'
 import BlogPost from './pages/BlogPost.jsx'
-
-const socials = [
-  { label: 'Email', href: 'mailto:arvind.venkat28@gmail.com', Icon: MailIcon },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/arvindvenkatesh36', Icon: LinkedInIcon },
-  { label: 'Instagram', href: 'https://www.instagram.com/arvindvenkatesh36', Icon: InstagramIcon },
-  { label: 'TikTok', href: 'https://www.tiktok.com/@arvindvenkatesh75', Icon: TikTokIcon },
-]
 
 function Footer() {
   return (
