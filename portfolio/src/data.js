@@ -53,7 +53,7 @@ export const sideQuests = [
     tags: 'Firebase · JavaScript · Figma',
   },
   {
-    name: 'RU Effect',
+    name: 'RU Dhol Effect',
     role: 'President',
     detail:
       'Leading Rutgers’ competitive South Asian percussion ensemble — 15+ performances a semester and partnerships with 7 external organizations.',
