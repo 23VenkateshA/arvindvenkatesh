@@ -28,14 +28,14 @@ export const photos = [
   },
   {
     src: quebecCafeChairs,
-    width: 1440,
-    height: 1080,
+    width: 1080,
+    height: 1440,
     alt: 'Wrought-iron café chairs lining a sunny sidewalk in Old Québec',
   },
   {
     src: montmorencyFalls,
-    width: 1440,
-    height: 1080,
+    width: 1080,
+    height: 1440,
     alt: "Montmorency Falls cutting through a green gorge outside Québec City",
   },
   {
