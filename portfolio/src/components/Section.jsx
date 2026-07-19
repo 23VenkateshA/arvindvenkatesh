@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 
-// Shared section shell: eyebrow label, heading, and a scroll-triggered reveal.
+// Shared section shell: handwritten eyebrow, big centered serif heading,
+// and a scroll-triggered reveal.
 export default function Section({ id, eyebrow, title, children }) {
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
@@ -10,13 +11,13 @@ export default function Section({ id, eyebrow, title, children }) {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <p className="mb-2 font-sans text-sm font-medium uppercase tracking-[0.2em] text-accent">
-          {eyebrow}
-        </p>
-        <h2 id={`${id}-title`} className="font-serif text-3xl sm:text-4xl">
-          {title}
-        </h2>
-        <div className="mt-10">{children}</div>
+        <div className="text-center">
+          <p className="font-hand mb-3 text-lg text-red">{eyebrow}</p>
+          <h2 id={`${id}-title`} className="font-display text-4xl text-cream sm:text-5xl">
+            {title}
+          </h2>
+        </div>
+        <div className="mt-14">{children}</div>
       </motion.div>
     </section>
   )

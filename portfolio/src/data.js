@@ -2,73 +2,96 @@ export const experience = [
   {
     company: 'Capital One',
     role: 'Product Management Intern',
-    // TODO(Arvind): split into sharper, outcome-focused bullets — layout already supports it.
-    highlights: [
-      'Leading requirements gathering and PRD development for a voice-prompted AI banking assistant — partnering with engineering and design on voice interaction flows and using SQL and Python to build a data-driven product roadmap.',
+    object: 'card',
+    blurb:
+      'Leading requirements gathering and PRD development for a voice-prompted AI banking assistant — partnering with engineering and design on voice interaction flows.',
+    learnt: 'Learnt to turn an ambiguous problem into a roadmap',
+    notable: [
+      'Voice AI assistant PRD',
+      'Voice interaction flows',
+      'SQL + Python product roadmap',
     ],
+    objectCaption: 'the internship card',
   },
   {
     company: 'Bristol Myers Squibb',
     role: 'Data Analyst Intern',
-    highlights: [
-      'Built a Power BI dashboard tracking 10+ productivity metrics, deployed AI agents with Microsoft Copilot Studio to automate repetitive workflows, and designed automated pipelines with Power Automate and SharePoint.',
+    object: 'rx',
+    blurb:
+      'Built a Power BI dashboard tracking 10+ productivity metrics and deployed AI agents with Microsoft Copilot Studio to automate repetitive workflows.',
+    learnt: 'Learnt that automation is a product too',
+    notable: [
+      'Power BI productivity dashboard',
+      'Copilot Studio AI agents',
+      'Power Automate + SharePoint pipelines',
     ],
+    objectCaption: 'prescribed: automation',
   },
   {
     company: "L'Oréal",
-    role: "Product Strategy Fellow · L'Oréal Brandstorm",
-    highlights: [
+    role: "Product Strategy Fellow · Brandstorm",
+    object: 'tag',
+    blurb:
       'Directed a cross-functional team in a 9-month global product innovation competition, developing a go-to-market strategy evaluated against 150+ universities across 64 countries.',
+    learnt: 'Learnt to ship a pitch the whole world can judge',
+    notable: [
+      'Go-to-market strategy',
+      'Cross-functional team leadership',
+      '9-month global competition',
     ],
+    objectCaption: 'the global pitch tag',
   },
 ]
 
-export const projects = [
+export const sideQuests = [
   {
     name: 'NBA MVP Predictor',
-    description:
+    role: 'creator',
+    detail:
       'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics — two passions, one model.',
-    stack: ['Python', 'scikit-learn', 'pandas', 'Machine Learning'],
+    tags: 'Python · scikit-learn · pandas',
   },
   {
     name: 'Practice Pal',
-    description:
+    role: 'creator',
+    detail:
       'An app that helps music students structure and track their practice sessions, designed end-to-end from Figma wireframes to a working product.',
-    stack: ['Firebase', 'JavaScript', 'Figma'],
+    tags: 'Firebase · JavaScript · Figma',
   },
-]
-
-export const leadership = [
   {
-    org: 'RU Dhol Effect',
+    name: 'RU Dhol Effect',
     role: 'President',
     detail:
       'Leading Rutgers’ competitive South Asian percussion ensemble — 15+ performances a semester and partnerships with 7 external organizations.',
+    tags: 'dhol · 15+ shows a semester',
   },
   {
-    org: 'BITS',
+    name: 'BITS',
     role: 'VP of Web Development',
     detail:
       'Migrated the Business Information Technology Society site to Next.js and Supabase and led a redesign serving 500+ IT students.',
+    tags: 'Next.js · Supabase',
   },
   {
-    org: 'Phi Chi Theta',
+    name: 'Phi Chi Theta',
     role: 'Professional Development Chair',
     detail:
       'Running professional development for a 60+ member business fraternity — recruiting workshops, branding, and an 85% internship placement rate.',
+    tags: 'workshops · branding',
   },
   {
-    org: 'Verizon Case Competition',
-    role: 'Winning Team',
+    name: 'Verizon Case Competition',
+    role: 'winning team',
     detail:
       'One of 3 winning teams out of 90 across Rutgers, leading product ideation and go-to-market strategy judged by Verizon professionals.',
+    tags: 'product ideation · GTM',
   },
 ]
 
 export const hobbies = [
-  { label: 'Indian classical violin', note: '7+ years' },
-  { label: 'Basketball & the NBA', note: 'analyst at heart' },
-  { label: 'Chess', note: 'always thinking two moves ahead' },
-  { label: 'Lifting & track', note: 'progressive overload, applied' },
-  { label: 'Travel', note: 'collecting places' },
+  { stamp: 'violin', label: 'Indian classical violin', note: '7+ years' },
+  { stamp: 'basketball', label: 'Basketball & the NBA', note: 'analyst at heart' },
+  { stamp: 'pawn', label: 'Chess', note: 'always thinking two moves ahead' },
+  { stamp: 'dumbbell', label: 'Lifting & track', note: 'progressive overload, applied' },
+  { stamp: 'plane', label: 'Travel', note: 'collecting places' },
 ]

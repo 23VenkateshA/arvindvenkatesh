@@ -1,31 +1,47 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import Section from './Section.jsx'
 import Lightbox from './Lightbox.jsx'
 import { photos } from '../data/gallery.js'
 
+// Handwritten polaroid captions + a scattered rotation pattern.
+const captions = [
+  'Amsterdam, golden hour',
+  'dusk tram, Amsterdam',
+  'Old Québec from above',
+  'café chairs, Québec',
+  'Montmorency Falls',
+  'quiet street, Old Québec',
+  'D.C. sunset',
+  'the St. Lawrence',
+]
+
+const tilts = [-3, 2, -2, 3, -2.5, 2.5, -3, 2]
+
 export default function Gallery() {
   const [activeIndex, setActiveIndex] = useState(null)
+  const reduceMotion = useReducedMotion()
 
   return (
-    <Section id="gallery" eyebrow="Photography" title="A few frames from the road">
-      <p className="max-w-xl leading-relaxed text-ink-soft">
+    <Section id="photos" eyebrow="frames from the road" title="Places I've been">
+      <p className="mx-auto max-w-xl text-center text-sm leading-relaxed text-tan">
         Travel is one of my hobbies and I like carrying a camera along for it — a handful of
-        favorites below.
+        favorites, straight off the fridge door.
       </p>
 
-      <div className="mt-8 columns-2 gap-4 sm:columns-3">
+      <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-10">
         {photos.map((photo, i) => (
           <motion.button
             key={photo.src}
             type="button"
             onClick={() => setActiveIndex(i)}
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.4, delay: (i % 3) * 0.06 }}
-            whileHover={{ y: -3 }}
-            className="group mb-4 block w-full break-inside-avoid overflow-hidden rounded-lg ring-1 ring-line focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+            transition={{ duration: 0.45, delay: (i % 3) * 0.07 }}
+            whileHover={reduceMotion ? undefined : { rotate: 0, y: -6, scale: 1.02 }}
+            style={{ rotate: tilts[i % tilts.length] }}
+            className="w-40 bg-paper p-2 pb-2.5 shadow-xl sm:w-48"
             aria-label={`Open photo: ${photo.alt}`}
           >
             <img
@@ -35,8 +51,11 @@ export default function Gallery() {
               height={photo.height}
               loading="lazy"
               decoding="async"
-              className="w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="aspect-square w-full object-cover"
             />
+            <span className="font-hand mt-2 block text-center text-sm leading-snug text-night">
+              {captions[i % captions.length]}
+            </span>
           </motion.button>
         ))}
       </div>
