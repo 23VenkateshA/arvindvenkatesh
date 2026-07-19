@@ -15,9 +15,8 @@ import BlogPost from './pages/BlogPost.jsx'
 const socials = [
   { label: 'Email', href: 'mailto:arvind.venkat28@gmail.com', Icon: MailIcon },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/arvindvenkatesh36', Icon: LinkedInIcon },
-  // TODO(Arvind): drop in the real profile URLs
-  { label: 'Instagram', href: '#', Icon: InstagramIcon },
-  { label: 'TikTok', href: '#', Icon: TikTokIcon },
+  { label: 'Instagram', href: 'https://www.instagram.com/arvindvenkatesh36', Icon: InstagramIcon },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@arvindvenkatesh75', Icon: TikTokIcon },
 ]
 
 function Footer() {
