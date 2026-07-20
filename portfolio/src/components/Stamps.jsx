@@ -2,8 +2,9 @@
 // the artwork "carved out" in the page's charcoal, roughened by the #stamp-rough
 // filter defined once in <RoughDefs /> (rendered from App).
 
-const RED = '#e35342'
-const CARVE = '#212121'
+const RED = '#c1633d'
+const CARVE = '#faf6f0'
+const INK = '#2b2420'
 
 export function RoughDefs() {
   return (
@@ -259,7 +260,7 @@ const QR_ROWS = [
   0b1011101011001,
 ]
 
-export function QRDoodle({ className, color = CARVE }) {
+export function QRDoodle({ className, color = INK }) {
   return (
     <svg viewBox="0 0 13 13" className={className} aria-hidden="true">
       {QR_ROWS.flatMap((row, y) =>
@@ -276,7 +277,7 @@ export function QRDoodle({ className, color = CARVE }) {
 // Deterministic fake barcode for the scrapbook objects.
 const BAR_WIDTHS = [3, 1, 2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 1, 2, 1, 3, 2, 1, 2, 1]
 
-export function Barcode({ className, color = CARVE }) {
+export function Barcode({ className, color = INK }) {
   let x = 0
   return (
     <svg viewBox="0 0 60 16" className={className} aria-hidden="true" preserveAspectRatio="none">

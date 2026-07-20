@@ -29,12 +29,12 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="font-display mt-10 text-5xl leading-[1.05] text-cream sm:text-7xl"
+          className="font-display mt-10 text-5xl leading-[1.05] text-ink sm:text-7xl"
         >
           Arvind Venkatesh
         </motion.h1>
 
-        <motion.p variants={item} className="font-hand mt-6 text-lg text-tan">
+        <motion.p variants={item} className="font-hand mt-6 text-lg text-ink-soft">
           Business Analytics &amp; Information Technology &middot; Data Science minor
         </motion.p>
 
@@ -42,7 +42,7 @@ export default function Hero() {
           variants={item}
           whileHover={reduceMotion ? undefined : { rotate: 0, y: -4 }}
           transition={{ type: 'spring', stiffness: 220, damping: 16 }}
-          className="mt-12 w-48 rotate-[-3deg] bg-paper p-2.5 pb-9 shadow-xl sm:w-56"
+          className="mt-12 w-48 rotate-[-3deg] bg-paper p-2.5 pb-9 shadow-xl ring-1 ring-line sm:w-56"
         >
           <img
             src={heroPhoto}
@@ -56,7 +56,7 @@ export default function Hero() {
         <motion.a
           variants={item}
           href="#work"
-          className="font-hand mt-14 inline-flex items-center gap-2 text-lg text-red hover:text-cream"
+          className="font-hand mt-14 inline-flex items-center gap-2 text-lg text-terra hover:text-ink"
         >
           see what I&rsquo;ve been up to ↓
         </motion.a>

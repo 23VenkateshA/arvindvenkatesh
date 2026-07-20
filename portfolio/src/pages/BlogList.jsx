@@ -3,17 +3,17 @@ import { motion } from 'framer-motion'
 import { posts, formatDate } from '../lib/posts.js'
 import { Barcode } from '../components/Stamps.jsx'
 
-// Posts styled as cream postcards pinned to the dark page.
+// Posts styled as paper postcards pinned to the ivory page.
 export default function BlogList() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <div className="text-center">
-        <p className="font-hand mb-3 text-lg text-red">the blog</p>
-        <h1 className="font-display text-4xl text-cream sm:text-5xl">Notes, as they come up</h1>
+        <p className="font-hand mb-3 text-lg text-terra">the blog</p>
+        <h1 className="font-display text-4xl text-ink sm:text-5xl">Notes, as they come up</h1>
       </div>
 
       {posts.length === 0 ? (
-        <p className="mt-10 text-center text-tan">No posts yet — check back soon.</p>
+        <p className="mt-10 text-center text-ink-soft">No posts yet — check back soon.</p>
       ) : (
         <ul className="mt-14 space-y-10">
           {posts.map((post, i) => (
@@ -29,19 +29,19 @@ export default function BlogList() {
             >
               <Link
                 to={`/blog/${post.slug}`}
-                className="group block rounded-lg bg-paper p-7 text-night shadow-xl"
+                className="group block rounded-lg bg-paper p-7 text-ink shadow-xl ring-1 ring-line"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-red">
+                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-terra">
                     {formatDate(post.date)}
                   </p>
                   <Barcode className="h-4 w-16 opacity-60" />
                 </div>
-                <h2 className="font-display mt-2 text-3xl transition-colors group-hover:text-red">
+                <h2 className="font-display mt-2 text-3xl transition-colors group-hover:text-terra">
                   {post.title}
                 </h2>
-                <p className="mt-3 text-sm leading-relaxed text-night/70">{post.excerpt}</p>
-                <span className="font-hand mt-4 inline-block text-base text-red">
+                <p className="mt-3 text-sm leading-relaxed text-ink/70">{post.excerpt}</p>
+                <span className="font-hand mt-4 inline-block text-base text-terra">
                   read more →
                 </span>
               </Link>

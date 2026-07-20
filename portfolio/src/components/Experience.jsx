@@ -8,21 +8,21 @@ import { experience } from '../data.js'
 
 function BankCard() {
   return (
-    <div className="w-72 rotate-[-2deg] rounded-xl bg-paper p-5 text-night shadow-xl">
+    <div className="w-72 rotate-[-2deg] rounded-xl bg-paper p-5 text-ink shadow-xl ring-1 ring-line">
       <div className="flex items-center justify-between">
         <p className="font-mono text-[0.65rem] font-bold tracking-[0.2em]">CAPITAL ONE</p>
         <div className="flex" aria-hidden="true">
-          <span className="h-5 w-5 rounded-full bg-red" />
-          <span className="-ml-2 h-5 w-5 rounded-full border-2 border-red" />
+          <span className="h-5 w-5 rounded-full bg-terra" />
+          <span className="-ml-2 h-5 w-5 rounded-full border-2 border-terra" />
         </div>
       </div>
-      <div className="mt-5 h-8 w-11 rounded border-2 border-red bg-tan">
-        <div className="mx-auto mt-1.5 h-4 w-7 border-x-2 border-red" aria-hidden="true" />
+      <div className="mt-5 h-8 w-11 rounded border-2 border-terra bg-tan">
+        <div className="mx-auto mt-1.5 h-4 w-7 border-x-2 border-terra" aria-hidden="true" />
       </div>
       <p className="mt-4 font-mono text-sm tracking-[0.18em]">•••• •••• 2026 INTERN</p>
       <div className="mt-4 flex items-end justify-between">
         <p className="font-mono text-[0.65rem] tracking-[0.15em]">A. VENKATESH</p>
-        <p className="font-mono text-[0.65rem] font-bold text-red">PM</p>
+        <p className="font-mono text-[0.65rem] font-bold text-terra">PM</p>
       </div>
     </div>
   )
@@ -30,16 +30,16 @@ function BankCard() {
 
 function RxLabel() {
   return (
-    <div className="w-72 rotate-[1.5deg] overflow-hidden rounded-lg bg-paper text-night shadow-xl">
-      <div className="flex items-center justify-between bg-red px-4 py-2">
-        <p className="font-mono text-[0.7rem] font-bold tracking-[0.15em] text-paper">
+    <div className="w-72 rotate-[1.5deg] overflow-hidden rounded-lg bg-paper text-ink shadow-xl ring-1 ring-line">
+      <div className="flex items-center justify-between bg-terra px-4 py-2">
+        <p className="font-mono text-[0.7rem] font-bold tracking-[0.15em] text-ivory">
           ℞ BRISTOL MYERS SQUIBB
         </p>
       </div>
       <div className="space-y-1.5 px-4 py-4 font-mono text-[0.7rem] leading-relaxed">
         <p>RX #0010 — PRODUCTIVITY</p>
         <p>W/ POWER BI + COPILOT</p>
-        <p className="text-red">REFILLS: AUTOMATED (∞)</p>
+        <p className="text-terra">REFILLS: AUTOMATED (∞)</p>
       </div>
       <div className="flex items-end justify-between px-4 pb-4">
         <Barcode className="h-6 w-24" />
@@ -55,7 +55,7 @@ function ClothingTag() {
       {/* string through the punch hole */}
       <svg
         viewBox="0 0 120 90"
-        className="absolute -top-14 left-2 w-32 text-tan"
+        className="absolute -top-14 left-2 w-32 text-ink-soft"
         aria-hidden="true"
       >
         <path
@@ -63,9 +63,9 @@ function ClothingTag() {
           fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"
         />
       </svg>
-      <div className="absolute left-8 top-2 h-56 w-44 rotate-[3deg] rounded-xl bg-red shadow-lg" />
-      <div className="absolute left-2 top-4 flex h-56 w-48 rotate-[-4deg] flex-col rounded-xl bg-paper p-4 text-night shadow-xl">
-        <div className="mx-auto h-3.5 w-3.5 rounded-full border-2 border-night bg-night/10" aria-hidden="true" />
+      <div className="absolute left-8 top-2 h-56 w-44 rotate-[3deg] rounded-xl bg-terra shadow-lg" />
+      <div className="absolute left-2 top-4 flex h-56 w-48 rotate-[-4deg] flex-col rounded-xl bg-paper p-4 text-ink shadow-xl ring-1 ring-line">
+        <div className="mx-auto h-3.5 w-3.5 rounded-full border-2 border-ink bg-ink/10" aria-hidden="true" />
         <p className="mt-3 text-center font-mono text-[0.65rem] font-bold tracking-[0.2em]">
           L&rsquo;ORÉAL BRANDSTORM
         </p>
@@ -75,7 +75,7 @@ function ClothingTag() {
         </p>
         <div className="mt-auto flex items-end justify-between">
           <Barcode className="h-5 w-20" />
-          <p className="font-mono text-[0.55rem] text-red">FELLOW</p>
+          <p className="font-mono text-[0.55rem] text-terra">FELLOW</p>
         </div>
       </div>
     </div>
@@ -113,17 +113,17 @@ export default function Experience() {
               </motion.div>
 
               <div className="text-center sm:text-left">
-                <h3 className="font-display text-3xl text-cream sm:text-4xl">{job.company}</h3>
-                <p className="mt-1 font-mono text-xs uppercase tracking-[0.2em] text-red">
+                <h3 className="font-display text-3xl text-ink sm:text-4xl">{job.company}</h3>
+                <p className="mt-1 font-mono text-xs uppercase tracking-[0.2em] text-terra">
                   {job.role}
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-tan">{job.blurb}</p>
+                <p className="mt-4 text-sm leading-relaxed text-ink-soft">{job.blurb}</p>
                 <div className="mt-5">
-                  <p className="font-hand text-base text-red">notable work</p>
-                  <ul className="mt-2 space-y-1 font-mono text-xs text-tan">
+                  <p className="font-hand text-base text-terra">notable work</p>
+                  <ul className="mt-2 space-y-1 font-mono text-xs text-ink-soft">
                     {job.notable.map((n) => (
                       <li key={n}>
-                        <span aria-hidden="true" className="text-red">✳ </span>
+                        <span aria-hidden="true" className="text-terra">✳ </span>
                         {n}
                       </li>
                     ))}

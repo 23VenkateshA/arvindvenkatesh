@@ -2,16 +2,15 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* Jackie-Zhang-inspired palette: charcoal night, vermilion stamps, cream paper */
-  --color-night: #212121;
-  --color-night-deep: #171717;
-  --color-panel: #2a2a2a;
-  --color-cream: #f5e1cd;
-  --color-paper: #f5ece3;
-  --color-tan: #d4c2b2;
-  --color-red: #e35342;
-  --color-red-deep: #c9402f;
-  --color-line: #3d3733;
+  /* Warm ivory & terracotta: earthy, editorial, travel-blog light theme */
+  --color-ivory: #faf6f0;
+  --color-paper: #fffdf8;
+  --color-ink: #2b2420;
+  --color-ink-soft: #5f544b;
+  --color-terra: #c1633d;
+  --color-sage: #8a9a7e;
+  --color-tan: #d9cbb8;
+  --color-line: #e7ddd0;
 
   --font-display: "Instrument Serif", ui-serif, Georgia, serif;
   --font-hand: "Kalam", "Comic Sans MS", cursive;
@@ -24,19 +23,19 @@ html {
 }
 
 body {
-  background-color: var(--color-night);
-  color: var(--color-cream);
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background-color: var(--color-red);
-  color: var(--color-paper);
+  background-color: var(--color-terra);
+  color: var(--color-ivory);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-red);
+  outline: 2px solid var(--color-terra);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -58,7 +57,7 @@ body {
 
 /* Hand-drawn squiggle underline (used by the nav + section headers) */
 .squiggle-under {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 6' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q 3.75 0.5 7.5 3 T 15 3 T 22.5 3 T 30 3 T 37.5 3 T 45 3 T 52.5 3 T 60 3' fill='none' stroke='%23e35342' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 6' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q 3.75 0.5 7.5 3 T 15 3 T 22.5 3 T 30 3 T 37.5 3 T 45 3 T 52.5 3 T 60 3' fill='none' stroke='%23c1633d' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 100% 6px;
@@ -105,15 +104,15 @@ body {
   }
 }
 
-/* Dark-palette overrides for markdown post bodies (@tailwindcss/typography) */
+/* Warm-palette overrides for markdown post bodies (@tailwindcss/typography) */
 .prose {
-  --tw-prose-body: var(--color-tan);
-  --tw-prose-headings: var(--color-cream);
-  --tw-prose-links: var(--color-red);
-  --tw-prose-bold: var(--color-cream);
-  --tw-prose-bullets: var(--color-red);
+  --tw-prose-body: var(--color-ink-soft);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-terra);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-bullets: var(--color-terra);
   --tw-prose-hr: var(--color-line);
-  --tw-prose-quotes: var(--color-cream);
-  --tw-prose-quote-borders: var(--color-red);
-  --tw-prose-code: var(--color-cream);
+  --tw-prose-quotes: var(--color-ink);
+  --tw-prose-quote-borders: var(--color-terra);
+  --tw-prose-code: var(--color-ink);
 }

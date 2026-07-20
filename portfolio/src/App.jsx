@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer id="connect" className="mt-10 border-t border-line">
       <div className="mx-auto max-w-3xl px-6 pb-14 pt-12 text-center">
-        <p className="font-hand text-lg text-red">say hello</p>
+        <p className="font-hand text-lg text-terra">say hello</p>
         <div className="mt-6 flex items-center justify-center gap-8">
           {socials.map(({ label, href, Icon }) => (
             <a
@@ -19,13 +19,13 @@ function Footer() {
               href={href}
               aria-label={label}
               title={label}
-              className="text-cream transition-colors hover:text-red"
+              className="text-ink transition-colors hover:text-terra"
             >
               <Icon className="h-7 w-7" />
             </a>
           ))}
         </div>
-        <p className="mt-10 font-mono text-xs text-tan/60">
+        <p className="mt-10 font-mono text-xs text-ink-soft/60">
           © {new Date().getFullYear()} Arvind Venkatesh
         </p>
       </div>
@@ -40,7 +40,7 @@ export default function App() {
       <StampBorder />
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-red focus:px-4 focus:py-2 focus:text-paper"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-terra focus:px-4 focus:py-2 focus:text-ivory"
       >
         Skip to content
       </a>
