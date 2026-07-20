@@ -39,20 +39,6 @@ export const experience = [
 
 export const sideQuests = [
   {
-    name: 'NBA MVP Predictor',
-    role: 'creator',
-    detail:
-      'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics.',
-    tags: 'Python · scikit-learn · pandas',
-  },
-  {
-    name: 'Practice Pal',
-    role: 'creator',
-    detail:
-      'An app that helps music students structure and track their practice sessions, designed end-to-end from Figma wireframes to a working product.',
-    tags: 'Firebase · JavaScript · Figma',
-  },
-  {
     name: 'RU Dhol Effect',
     role: 'Co-President',
     detail:
@@ -79,6 +65,20 @@ export const sideQuests = [
     detail:
       'One of 3 winning teams out of 90 across Rutgers, leading product ideation and go-to-market strategy judged by Verizon professionals.',
     tags: 'product ideation · GTM',
+  },
+  {
+    name: 'NBA MVP Predictor',
+    role: 'creator',
+    detail:
+      'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics.',
+    tags: 'Python · scikit-learn · pandas',
+  },
+  {
+    name: 'Practice Pal',
+    role: 'creator',
+    detail:
+      'An app that helps music students structure and track their practice sessions, designed end-to-end from Figma wireframes to a working product.',
+    tags: 'Firebase · JavaScript · Figma',
   },
 ]
 
