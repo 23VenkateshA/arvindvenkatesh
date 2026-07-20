@@ -4,27 +4,29 @@ import { posts, formatDate } from '../lib/posts.js'
 import { Barcode } from '../components/Stamps.jsx'
 import { onRepeat } from '../data/music.js'
 
-// "// on repeat" — current music rotation, each cover linking out.
+// Current music rotation, styled like the rest of the scrapbook: tilted
+// polaroid sleeves with handwritten captions, each cover linking out.
+const sleeveTilts = [-3, 2.5, -2]
+
 function OnRepeat() {
   return (
-    <section aria-labelledby="on-repeat-title" className="mt-24">
-      <h2 id="on-repeat-title" className="font-display text-3xl text-cream sm:text-4xl">
-        <span aria-hidden="true" className="font-mono font-bold text-sage">
-          //{' '}
-        </span>
-        on repeat
+    <section aria-labelledby="on-repeat-title" className="mt-28 text-center">
+      <p className="font-hand text-lg text-sage">spinning lately</p>
+      <h2 id="on-repeat-title" className="font-display mt-1 text-4xl text-cream sm:text-5xl">
+        On repeat
       </h2>
-      <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">
+      <div className="mt-12 flex flex-wrap items-start justify-center gap-x-8 gap-y-10">
         {onRepeat.map(({ title, artist, art, href }, i) => (
           <motion.a
             key={title}
             href={href}
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.4, delay: i * 0.08 }}
-            whileHover={{ y: -5 }}
-            className="group mx-auto w-full max-w-56 sm:mx-0 sm:max-w-none"
+            transition={{ duration: 0.45, delay: i * 0.08 }}
+            whileHover={{ rotate: 0, y: -6, scale: 1.02 }}
+            style={{ rotate: sleeveTilts[i % sleeveTilts.length] }}
+            className="block w-44 bg-paper p-2 pb-2.5 shadow-xl sm:w-52"
           >
             <img
               src={art}
@@ -33,12 +35,14 @@ function OnRepeat() {
               height={600}
               loading="lazy"
               decoding="async"
-              className="aspect-square w-full rounded-lg object-cover shadow-xl"
+              className="aspect-square w-full object-cover"
             />
-            <p className="mt-4 font-mono text-sm font-bold text-sage transition-colors group-hover:text-cream">
+            <span className="font-hand mt-2 block text-center text-sm leading-snug text-ink">
               {title}
-            </p>
-            <p className="mt-1 text-sm text-muted">{artist}</p>
+            </span>
+            <span className="font-mono block text-center text-[0.65rem] uppercase tracking-[0.15em] text-ink/60">
+              {artist}
+            </span>
           </motion.a>
         ))}
       </div>

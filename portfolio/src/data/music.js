@@ -1,22 +1,22 @@
-// Albums/songs on rotation, shown in the "// on repeat" block on the blog
-// page. Artwork is served from Apple's public artwork CDN (iTunes Search API).
+// Songs on rotation, shown in the "On repeat" block on the blog page.
+// Artwork is served from Apple's public artwork CDN (iTunes Search API).
 export const onRepeat = [
   {
-    title: 'Why Lawd?',
-    artist: 'NxWorries',
-    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/7a/2e/057a2ea4-4546-fdc5-b4e4-f801d53d4a16/2101.jpg/600x600bb.jpg',
-    href: 'https://music.apple.com/us/album/why-lawd/1828319564',
+    title: 'Khwaja Mere Khwaja',
+    artist: 'A.R. Rahman',
+    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/ad/89/25ad8924-f933-e7fd-a0aa-17305e14eb2d/886448872016.jpg/600x600bb.jpg',
+    href: 'https://music.apple.com/us/album/khwaja-mere-khwaja/1537961309?i=1537961313',
   },
   {
-    title: 'CHROMAKOPIA',
-    artist: 'Tyler, The Creator',
-    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/ef/ee/b6efeefa-fc99-37d1-ad21-0d769b2a4958/196872796971.jpg/600x600bb.jpg',
-    href: 'https://music.apple.com/us/album/chromakopia/1789446415',
+    title: 'Kali Kali Zulfon Ke',
+    artist: 'Nusrat Fateh Ali Khan',
+    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/46/1a/ec/461aec6f-fde7-d76f-d849-25caa61ee11e/829410200189.jpg/600x600bb.jpg',
+    href: 'https://music.apple.com/us/album/kali-kali-zulfon-ke/268070372?i=268074187',
   },
   {
-    title: 'GNX',
-    artist: 'Kendrick Lamar',
-    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/28/14/54281424-eece-0935-299d-fdd2ab403f92/24UM1IM28978.rgb.jpg/600x600bb.jpg',
-    href: 'https://music.apple.com/us/album/gnx/1781316864',
+    title: 'Country House',
+    artist: 'Blur',
+    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music/v4/46/28/05/46280507-dff8-b90a-476f-d03da8d954a8/5099991502254_1500x1500_300dpi.jpg/600x600bb.jpg',
+    href: 'https://music.apple.com/us/album/country-house/699616785?i=699616868',
   },
 ]
