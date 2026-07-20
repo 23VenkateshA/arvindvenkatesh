@@ -77,6 +77,15 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* Slow continuous rotation for the vinyl record */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+.spin-slow {
+  animation: spin-slow 5s linear infinite;
+}
+
 /* Vertical marquee for the side stamp borders — content is rendered three
    times in markup; the track slides by exactly one copy */
 @keyframes marquee-y {
@@ -100,8 +109,9 @@ body {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  /* A near-zero duration would make the marquee jitter — freeze it instead */
-  .marquee-y-track {
+  /* A near-zero duration would make these jitter — freeze them instead */
+  .marquee-y-track,
+  .spin-slow {
     animation: none !important;
   }
 }

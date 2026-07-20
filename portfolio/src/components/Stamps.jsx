@@ -251,6 +251,36 @@ export function TikTokIcon({ className }) {
 export const CONNECT_CIRCLE_PATH =
   'M14 30 C 8 14, 40 5, 72 6 C 104 7, 126 13, 124 27 C 122 42, 88 49, 52 46 C 24 44, 8 37, 16 22 C 19 16, 28 11, 38 9'
 
+// Hand-drawn vinyl record for the "On repeat" block — spun via the
+// `spin-slow` utility class on the consumer side.
+export function VinylStamp({ className }) {
+  return (
+    <svg
+      viewBox="0 0 96 96"
+      className={className}
+      aria-hidden="true"
+      style={{ filter: 'url(#stamp-rough)' }}
+    >
+      <circle cx="48" cy="48" r="45" fill={INK} />
+      <circle cx="48" cy="48" r="45" fill="none" stroke="#ede6dc" strokeWidth="1.5" opacity="0.35" />
+      {[40, 36, 32, 28, 24].map((r) => (
+        <circle key={r} cx="48" cy="48" r={r} fill="none" stroke="#ede6dc" strokeWidth="1" opacity="0.12" />
+      ))}
+      <circle cx="48" cy="48" r="16" fill="#f2ebe0" />
+      <circle cx="48" cy="48" r="16" fill="none" stroke={RED} strokeWidth="2" />
+      <path
+        d="M40 44 q4 -3 8 0 t8 0"
+        fill="none" stroke={INK} strokeWidth="1.6" strokeLinecap="round"
+      />
+      <path
+        d="M40 52 q4 3 8 0 t8 0"
+        fill="none" stroke={RED} strokeWidth="1.6" strokeLinecap="round"
+      />
+      <circle cx="48" cy="48" r="2.5" fill={INK} />
+    </svg>
+  )
+}
+
 // Deterministic fake QR code for the gallery ticket stub. Rows are 13-bit
 // patterns with QR-style finder squares in three corners.
 const QR_ROWS = [

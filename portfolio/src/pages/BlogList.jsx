@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { posts, formatDate } from '../lib/posts.js'
-import { Barcode } from '../components/Stamps.jsx'
+import { Barcode, VinylStamp } from '../components/Stamps.jsx'
 import { onRepeat } from '../data/music.js'
 
-// Current music rotation, styled like the rest of the scrapbook: tilted
-// polaroid sleeves with handwritten captions, each cover linking out.
-const sleeveTilts = [-3, 2.5, -2]
+// Current music rotation: a spinning vinyl over the title, then the songs
+// as plain album covers linking out.
+const coverTilts = [-2, 1.5, -1.5]
 
 function OnRepeat() {
   return (
     <section aria-labelledby="on-repeat-title" className="mt-28 text-center">
-      <p className="font-hand text-lg text-sage">spinning lately</p>
-      <h2 id="on-repeat-title" className="font-display mt-1 text-4xl text-cream sm:text-5xl">
+      <div className="flex justify-center">
+        <VinylStamp className="spin-slow w-24 sm:w-28" />
+      </div>
+      <h2 id="on-repeat-title" className="font-display mt-6 text-4xl text-cream sm:text-5xl">
         On repeat
       </h2>
       <div className="mt-12 flex flex-wrap items-start justify-center gap-x-8 gap-y-10">
@@ -24,9 +26,9 @@ function OnRepeat() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45, delay: i * 0.08 }}
-            whileHover={{ rotate: 0, y: -6, scale: 1.02 }}
-            style={{ rotate: sleeveTilts[i % sleeveTilts.length] }}
-            className="block w-44 bg-paper p-2 pb-2.5 shadow-xl sm:w-52"
+            whileHover={{ rotate: 0, y: -6, scale: 1.03 }}
+            style={{ rotate: coverTilts[i % coverTilts.length] }}
+            className="block w-44 sm:w-52"
           >
             <img
               src={art}
@@ -35,12 +37,12 @@ function OnRepeat() {
               height={600}
               loading="lazy"
               decoding="async"
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full rounded-md object-cover shadow-xl"
             />
-            <span className="font-hand mt-2 block text-center text-sm leading-snug text-ink">
+            <span className="font-hand mt-3 block text-center text-base leading-snug text-cream">
               {title}
             </span>
-            <span className="font-mono block text-center text-[0.65rem] uppercase tracking-[0.15em] text-ink/60">
+            <span className="font-mono block text-center text-[0.65rem] uppercase tracking-[0.15em] text-muted">
               {artist}
             </span>
           </motion.a>
