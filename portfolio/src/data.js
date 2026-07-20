@@ -42,7 +42,7 @@ export const sideQuests = [
     name: 'NBA MVP Predictor',
     role: 'creator',
     detail:
-      'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics — two passions, one model.',
+      'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics.',
     tags: 'Python · scikit-learn · pandas',
   },
   {
@@ -54,7 +54,7 @@ export const sideQuests = [
   },
   {
     name: 'RU Dhol Effect',
-    role: 'President',
+    role: 'Co-President',
     detail:
       'Leading Rutgers’ competitive South Asian percussion ensemble — 15+ performances a semester and partnerships with 7 external organizations.',
     tags: '15+ shows a semester',
@@ -70,7 +70,7 @@ export const sideQuests = [
     name: 'Phi Chi Theta',
     role: 'Professional Development Chair',
     detail:
-      'Running professional development for a 60+ member business fraternity — recruiting workshops, branding, and an 85% internship placement rate.',
+      'Running professional development for a 60+ member business fraternity.',
     tags: 'workshops · branding',
   },
   {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
-import { Smiley, FaceDoodle, CONNECT_CIRCLE_PATH } from './Stamps.jsx'
+import { Smiley, CONNECT_CIRCLE_PATH } from './Stamps.jsx'
 import { socials } from '../data/socials.js'
 
 const links = [
@@ -108,20 +108,6 @@ export default function Nav() {
                       </a>
                     </motion.li>
                   ))}
-                  <motion.li
-                    aria-hidden="true"
-                    className="pointer-events-none absolute -left-14 top-1/2 -translate-y-1/2"
-                    initial={{ opacity: 0, scale: 0.4, rotate: -14 }}
-                    animate={{ opacity: 1, scale: 1, rotate: -6 }}
-                    exit={{ opacity: 0, scale: 0.4 }}
-                    transition={
-                      reduceMotion
-                        ? { duration: 0 }
-                        : { type: 'spring', stiffness: 380, damping: 22, delay: 0.22 }
-                    }
-                  >
-                    <FaceDoodle className="h-12 w-12 text-cream" />
-                  </motion.li>
                 </div>
               </ul>
             )}

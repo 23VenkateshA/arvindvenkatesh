@@ -245,25 +245,33 @@ export function TikTokIcon({ className }) {
   )
 }
 
-// Spiky-haired face doodle that tags along with the Connect reveal.
-export function FaceDoodle({ className }) {
-  return (
-    <svg viewBox="0 0 48 48" className={className} aria-hidden="true" fill="none"
-      stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 19 c-2.5 9 0.5 15.5 10 16.5 c9 1 14.5 -6 13 -14.5" />
-      <path d="M13 18 l3 -6.5 l3.5 4.5 l4 -6.5 l3.5 5.5 l4 -5 l2.5 5 l4 -3.5 l0.5 6" />
-      <path d="M37 23 c3 -1 4 2.5 1 4.5" />
-      <circle cx="22" cy="25" r="1.1" fill="currentColor" stroke="none" />
-      <circle cx="30" cy="25" r="1.1" fill="currentColor" stroke="none" />
-      <path d="M21.5 30.5 q4.5 4 9.5 0" />
-    </svg>
-  )
-}
-
 // Hand-drawn circle that loops around the Connect nav item, with a little
 // overshoot tail. Animate the path's pathLength to "draw" it.
 export const CONNECT_CIRCLE_PATH =
   'M14 30 C 8 14, 40 5, 72 6 C 104 7, 126 13, 124 27 C 122 42, 88 49, 52 46 C 24 44, 8 37, 16 22 C 19 16, 28 11, 38 9'
+
+// Deterministic fake QR code for the gallery ticket stub. Rows are 13-bit
+// patterns with QR-style finder squares in three corners.
+const QR_ROWS = [
+  0b1111111010111, 0b1000001001001, 0b1011101010111, 0b1011101000101,
+  0b1011101011101, 0b1000001001001, 0b1111111010101, 0b0000000011010,
+  0b1010110100110, 0b0110010010011, 0b1111111001010, 0b1000001010110,
+  0b1011101011001,
+]
+
+export function QRDoodle({ className, color = CARVE }) {
+  return (
+    <svg viewBox="0 0 13 13" className={className} aria-hidden="true">
+      {QR_ROWS.flatMap((row, y) =>
+        Array.from({ length: 13 }, (_, x) =>
+          row & (1 << (12 - x)) ? (
+            <rect key={`${x}-${y}`} x={x} y={y} width="1.05" height="1.05" fill={color} />
+          ) : null,
+        ),
+      )}
+    </svg>
+  )
+}
 
 // Deterministic fake barcode for the scrapbook objects.
 const BAR_WIDTHS = [3, 1, 2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 1, 2, 1, 3, 2, 1, 2, 1]
