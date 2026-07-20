@@ -33,21 +33,21 @@ export default function Gallery() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="rotate-[-1.2deg]"
       >
-        <div className="flex overflow-hidden rounded-2xl bg-ink shadow-2xl">
+        <div className="flex overflow-hidden rounded-2xl bg-card shadow-2xl">
           {/* Ticket body */}
           <div className="flex-1 p-6 sm:p-10">
-            <p className="font-hand text-lg text-terra">frames from the road</p>
-            <h2 id="photos-title" className="font-display mt-1 text-4xl text-ivory sm:text-5xl">
+            <p className="font-hand text-lg text-sage">frames from the road</p>
+            <h2 id="photos-title" className="font-display mt-1 text-4xl text-cream sm:text-5xl">
               Places I&rsquo;ve been
             </h2>
 
             <div className="mt-6 space-y-1">
-              <p className="font-mono text-base font-bold tracking-[0.25em] text-ivory">ADMIT 1</p>
-              <p className="font-display text-lg italic text-ivory/80">My ticket to see the world</p>
-              <p className="font-mono text-[0.65rem] tracking-[0.2em] text-ivory/60">ROW H0 · SEAT M3</p>
+              <p className="font-mono text-base font-bold tracking-[0.25em] text-cream">ADMIT 1</p>
+              <p className="font-display text-lg italic text-cream/80">My ticket to see the world</p>
+              <p className="font-mono text-[0.65rem] tracking-[0.2em] text-cream/60">ROW H0 · SEAT M3</p>
             </div>
 
-            <p className="mt-8 text-right font-mono text-xl tracking-[0.3em] text-ivory/70">
+            <p className="mt-8 text-right font-mono text-xl tracking-[0.3em] text-cream/70">
               {new Date().getFullYear()}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function Gallery() {
             transition={{ duration: 0.45, delay: (i % 3) * 0.07 }}
             whileHover={reduceMotion ? undefined : { rotate: 0, y: -6, scale: 1.02 }}
             style={{ rotate: tilts[i % tilts.length] }}
-            className="w-40 bg-paper p-2 pb-2.5 shadow-xl ring-1 ring-line sm:w-48"
+            className="w-40 bg-paper p-2 pb-2.5 shadow-xl sm:w-48"
             aria-label={`Open photo: ${photo.alt}`}
           >
             <img

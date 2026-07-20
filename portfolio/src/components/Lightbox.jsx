@@ -35,7 +35,7 @@ export default function Lightbox({ photos, index, onClose, onPrev, onNext }) {
           role="dialog"
           aria-modal="true"
           aria-label="Photo viewer"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/95 p-4 sm:p-8"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-night/95 p-4 sm:p-8"
           onClick={onClose}
         >
           <button
@@ -43,7 +43,7 @@ export default function Lightbox({ photos, index, onClose, onPrev, onNext }) {
             type="button"
             onClick={onClose}
             aria-label="Close photo viewer"
-            className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-ivory/90 hover:text-ivory focus-visible:outline focus-visible:outline-2 focus-visible:outline-ivory sm:right-6 sm:top-6"
+            className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-cream/90 hover:text-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream sm:right-6 sm:top-6"
           >
             ×
           </button>
@@ -55,7 +55,7 @@ export default function Lightbox({ photos, index, onClose, onPrev, onNext }) {
               onPrev()
             }}
             aria-label="Previous photo"
-            className="absolute left-2 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-ivory/90 hover:text-ivory focus-visible:outline focus-visible:outline-2 focus-visible:outline-ivory sm:left-6"
+            className="absolute left-2 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-cream/90 hover:text-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream sm:left-6"
           >
             ‹
           </button>
@@ -78,7 +78,7 @@ export default function Lightbox({ photos, index, onClose, onPrev, onNext }) {
               onNext()
             }}
             aria-label="Next photo"
-            className="absolute right-2 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-ivory/90 hover:text-ivory focus-visible:outline focus-visible:outline-2 focus-visible:outline-ivory sm:right-6"
+            className="absolute right-2 flex h-11 w-11 items-center justify-center rounded-full text-2xl text-cream/90 hover:text-sage focus-visible:outline focus-visible:outline-2 focus-visible:outline-cream sm:right-6"
           >
             ›
           </button>

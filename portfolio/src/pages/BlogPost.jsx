@@ -11,9 +11,9 @@ export default function BlogPost() {
   if (!post) {
     return (
       <section className="mx-auto max-w-3xl px-6 py-16 text-center sm:py-24">
-        <h1 className="font-display text-4xl text-ink">Post not found</h1>
-        <p className="mt-4 text-ink-soft">That post doesn&rsquo;t exist, or moved.</p>
-        <Link to="/blog" className="font-hand mt-6 inline-block text-lg text-terra hover:text-ink">
+        <h1 className="font-display text-4xl text-cream">Post not found</h1>
+        <p className="mt-4 text-muted">That post doesn&rsquo;t exist, or moved.</p>
+        <Link to="/blog" className="font-hand mt-6 inline-block text-lg text-sage hover:text-cream">
           ← back to the blog
         </Link>
       </section>
@@ -22,13 +22,13 @@ export default function BlogPost() {
 
   return (
     <article className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
-      <Link to="/blog" className="font-hand text-lg text-terra hover:text-ink">
+      <Link to="/blog" className="font-hand text-lg text-sage hover:text-cream">
         ← back to the blog
       </Link>
-      <p className="mt-10 font-mono text-xs uppercase tracking-[0.15em] text-ink-soft">
+      <p className="mt-10 font-mono text-xs uppercase tracking-[0.15em] text-muted">
         {formatDate(post.date)}
       </p>
-      <h1 className="font-display mt-2 text-4xl leading-tight text-ink sm:text-5xl">
+      <h1 className="font-display mt-2 text-4xl leading-tight text-cream sm:text-5xl">
         {post.title}
       </h1>
       <div

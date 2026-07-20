@@ -5,7 +5,7 @@ import { Smiley, CONNECT_CIRCLE_PATH } from './Stamps.jsx'
 import { socials } from '../data/socials.js'
 
 const links = [
-  { to: '/', label: 'Work' },
+  { to: '/', label: 'About' },
   { to: '/blog', label: 'Blog' },
 ]
 
@@ -27,7 +27,7 @@ export default function Nav() {
         aria-label="Main"
         className="mx-auto flex max-w-3xl items-center justify-center gap-8 px-6 pt-10 sm:gap-12"
       >
-        <Link to="/" aria-label="Back to top" className="text-ink transition-colors hover:text-terra">
+        <Link to="/" aria-label="Back to top" className="text-cream transition-colors hover:text-sage">
           <Smiley className="h-6 w-6" />
         </Link>
         {links.map(({ to, label }) => {
@@ -36,8 +36,8 @@ export default function Nav() {
             <Link
               key={label}
               to={to}
-              className={`font-hand text-lg transition-colors hover:text-terra ${
-                active ? 'squiggle-under text-ink' : 'text-ink'
+              className={`font-hand text-lg transition-colors hover:text-sage ${
+                active ? 'squiggle-under text-cream' : 'text-cream'
               }`}
             >
               {label}
@@ -55,7 +55,7 @@ export default function Nav() {
             onClick={() => setConnectOpen((v) => (canHover ? true : !v))}
             aria-expanded={connectOpen}
             aria-label={connectOpen ? 'Hide contact links' : 'Show contact links'}
-            className="font-hand relative px-1 text-lg text-ink transition-colors hover:text-terra"
+            className="font-hand relative px-1 text-lg text-cream transition-colors hover:text-sage"
           >
             Connect
             <AnimatePresence>
@@ -63,7 +63,7 @@ export default function Nav() {
                 <svg
                   viewBox="0 0 136 52"
                   aria-hidden="true"
-                  className="pointer-events-none absolute -left-4 -top-2.5 h-[calc(100%+20px)] w-[calc(100%+32px)] text-ink"
+                  className="pointer-events-none absolute -left-4 -top-2.5 h-[calc(100%+20px)] w-[calc(100%+32px)] text-cream"
                 >
                   <motion.path
                     d={CONNECT_CIRCLE_PATH}
@@ -102,7 +102,7 @@ export default function Nav() {
                         href={href}
                         aria-label={label}
                         title={label}
-                        className="block text-ink transition-colors hover:text-terra"
+                        className="block text-cream transition-colors hover:text-sage"
                       >
                         <Icon className="h-7 w-7" />
                       </a>

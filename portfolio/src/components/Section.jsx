@@ -12,8 +12,8 @@ export default function Section({ id, eyebrow, title, children }) {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="text-center">
-          <p className="font-hand mb-3 text-lg text-terra">{eyebrow}</p>
-          <h2 id={`${id}-title`} className="font-display text-4xl text-ink sm:text-5xl">
+          <p className="font-hand mb-3 text-lg text-sage">{eyebrow}</p>
+          <h2 id={`${id}-title`} className="font-display text-4xl text-cream sm:text-5xl">
             {title}
           </h2>
         </div>

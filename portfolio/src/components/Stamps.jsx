@@ -2,8 +2,8 @@
 // the artwork "carved out" in the page's charcoal, roughened by the #stamp-rough
 // filter defined once in <RoughDefs /> (rendered from App).
 
-const RED = '#c1633d'
-const CARVE = '#faf6f0'
+const RED = '#7a8b6f'
+const CARVE = '#1c1815'
 const INK = '#2b2420'
 
 export function RoughDefs() {
