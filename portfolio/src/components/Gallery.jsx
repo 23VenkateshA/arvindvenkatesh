@@ -47,37 +47,6 @@ export default function Gallery() {
               <p className="font-mono text-[0.65rem] tracking-[0.2em] text-tan/70">ROW H0 · SEAT M3</p>
             </div>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-8">
-              {photos.map((photo, i) => (
-                <motion.button
-                  key={photo.src}
-                  type="button"
-                  onClick={() => setActiveIndex(i)}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-60px' }}
-                  transition={{ duration: 0.45, delay: (i % 3) * 0.07 }}
-                  whileHover={reduceMotion ? undefined : { rotate: 0, y: -6, scale: 1.02 }}
-                  style={{ rotate: tilts[i % tilts.length] }}
-                  className="w-36 bg-paper p-2 pb-2.5 shadow-xl sm:w-44"
-                  aria-label={`Open photo: ${photo.alt}`}
-                >
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    width={photo.width}
-                    height={photo.height}
-                    loading="lazy"
-                    decoding="async"
-                    className="aspect-square w-full object-cover"
-                  />
-                  <span className="font-hand mt-2 block text-center text-sm leading-snug text-night">
-                    {captions[i % captions.length]}
-                  </span>
-                </motion.button>
-              ))}
-            </div>
-
             <p className="mt-8 text-right font-mono text-xl tracking-[0.3em] text-cream/70">
               {new Date().getFullYear()}
             </p>
@@ -104,6 +73,37 @@ export default function Gallery() {
           </div>
         </div>
       </motion.div>
+
+      <div className="mt-16 flex flex-wrap justify-center gap-x-6 gap-y-10">
+        {photos.map((photo, i) => (
+          <motion.button
+            key={photo.src}
+            type="button"
+            onClick={() => setActiveIndex(i)}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.45, delay: (i % 3) * 0.07 }}
+            whileHover={reduceMotion ? undefined : { rotate: 0, y: -6, scale: 1.02 }}
+            style={{ rotate: tilts[i % tilts.length] }}
+            className="w-40 bg-paper p-2 pb-2.5 shadow-xl sm:w-48"
+            aria-label={`Open photo: ${photo.alt}`}
+          >
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
+              className="aspect-square w-full object-cover"
+            />
+            <span className="font-hand mt-2 block text-center text-sm leading-snug text-night">
+              {captions[i % captions.length]}
+            </span>
+          </motion.button>
+        ))}
+      </div>
 
       <Lightbox
         photos={photos}
