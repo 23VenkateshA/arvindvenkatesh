@@ -8,15 +8,15 @@ export const onRepeat = [
     href: 'https://music.apple.com/us/album/khwaja-mere-khwaja/1537961309?i=1537961313',
   },
   {
-    title: 'Kali Kali Zulfon Ke',
-    artist: 'Nusrat Fateh Ali Khan',
-    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/46/1a/ec/461aec6f-fde7-d76f-d849-25caa61ee11e/829410200189.jpg/600x600bb.jpg',
-    href: 'https://music.apple.com/us/album/kali-kali-zulfon-ke/268070372?i=268074187',
+    title: 'I Just Called to Say I Love You',
+    artist: 'Stevie Wonder',
+    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c3/dd/f8/c3ddf870-42a0-d21b-b503-a8e09a589875/00602537840809.rgb.jpg/600x600bb.jpg',
+    href: 'https://music.apple.com/us/album/i-just-called-to-say-i-love-you/1443899836?i=1443900460',
   },
   {
-    title: 'Country House',
-    artist: 'Blur',
-    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music/v4/46/28/05/46280507-dff8-b90a-476f-d03da8d954a8/5099991502254_1500x1500_300dpi.jpg/600x600bb.jpg',
-    href: 'https://music.apple.com/us/album/country-house/699616785?i=699616868',
+    title: "If It Wasn't for the Nights",
+    artist: 'ABBA',
+    art: 'https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9d/47/d2/9d47d24b-c35d-5db2-0fe7-3a07670adc44/14UMGIM07612.rgb.jpg/600x600bb.jpg',
+    href: 'https://music.apple.com/us/album/if-it-wasnt-for-the-nights/1440816296?i=1440816768',
   },
 ]
