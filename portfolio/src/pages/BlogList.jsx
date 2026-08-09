@@ -56,14 +56,7 @@ function OnRepeat() {
 export default function BlogList() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <div className="text-center">
-        <p className="font-hand mb-3 text-lg text-sage">the blog</p>
-        <h1 className="font-display text-4xl text-cream sm:text-5xl">Notes, as they come up</h1>
-      </div>
-
-      {posts.length === 0 ? (
-        <p className="mt-10 text-center text-muted">No posts yet — check back soon.</p>
-      ) : (
+      {posts.length === 0 ? null : (
         <ul className="mt-14 space-y-10">
           {posts.map((post, i) => (
             <motion.li
