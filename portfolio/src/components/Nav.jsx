@@ -6,7 +6,7 @@ import { socials } from '../data/socials.js'
 
 const links = [
   { to: '/', label: 'About' },
-  { to: '/blog', label: 'Blog' },
+  { to: '/blog', label: 'Misc' },
 ]
 
 // Sideways scatter so the icon column reads hand-placed, not machine-stacked.

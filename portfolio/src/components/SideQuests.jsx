@@ -6,7 +6,7 @@ import { sideQuests } from '../data.js'
 // a numbered quest log in monospace.
 export default function SideQuests() {
   return (
-    <Section id="quests" eyebrow="off the résumé" title="Side quests">
+    <Section id="quests" title="Side quests">
       <ol className="divide-y divide-line border-y border-line">
         {sideQuests.map(({ name, role, detail, tags }, i) => (
           <motion.li
