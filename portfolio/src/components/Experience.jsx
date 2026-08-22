@@ -92,6 +92,9 @@ function ClothingTag() {
         <p className="mt-3 text-center font-mono text-[0.65rem] font-bold tracking-[0.2em]">
           L&rsquo;ORÉAL BRANDSTORM
         </p>
+        <p className="mt-0.5 text-center font-mono text-[0.55rem] tracking-[0.15em] text-sage">
+          SEASON 2025
+        </p>
         <p className="font-display mt-3 text-center text-4xl leading-none">150+</p>
         <p className="mt-1 text-center font-mono text-[0.62rem] tracking-[0.1em]">
           UNIVERSITIES · 64 COUNTRIES

@@ -24,18 +24,6 @@ export const experience = [
     ],
   },
   {
-    company: 'SimpliGov',
-    role: 'Intern',
-    object: 'form',
-    blurb:
-      'Redesigned government workflow processes by translating stakeholder needs into intuitive digital solutions — automating critical workflows and integrating them with payments and single sign-on systems.',
-    notable: [
-      '20% faster approvals',
-      '15% greater accuracy',
-      'Payments + SSO integrations',
-    ],
-  },
-  {
     company: "L'Oréal",
     role: "Product Strategy Fellow · Brandstorm",
     object: 'tag',
@@ -45,6 +33,18 @@ export const experience = [
       'Go-to-market strategy',
       'Cross-functional team leadership',
       '9-month global competition',
+    ],
+  },
+  {
+    company: 'SimpliGov',
+    role: 'Intern',
+    object: 'form',
+    blurb:
+      'Redesigned government workflow processes by translating stakeholder needs into intuitive digital solutions — automating critical workflows and integrating them with payments and single sign-on systems.',
+    notable: [
+      '20% faster approvals',
+      '15% greater accuracy',
+      'Payments + SSO integrations',
     ],
   },
 ]
