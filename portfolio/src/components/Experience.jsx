@@ -4,7 +4,8 @@ import { Barcode } from './Stamps.jsx'
 import { experience } from '../data.js'
 
 // Each employer is rendered as a physical scrapbook object: a bank card for
-// Capital One, a prescription label for BMS, a clothing tag for L'Oréal.
+// Capital One, a prescription label for BMS, an approval form for SimpliGov,
+// a clothing tag for L'Oréal.
 
 function BankCard() {
   return (
@@ -39,12 +40,34 @@ function RxLabel() {
       <div className="space-y-1.5 px-4 py-4 font-mono text-[0.7rem] leading-relaxed">
         <p>RX #0010 — PRODUCTIVITY</p>
         <p>W/ POWER BI + COPILOT</p>
+        <p>FILLED: SUMMER 2025</p>
         <p className="text-sage">REFILLS: AUTOMATED (∞)</p>
       </div>
       <div className="flex items-end justify-between px-4 pb-4">
         <Barcode className="h-6 w-24" />
         <p className="font-mono text-[0.6rem] tracking-[0.1em]">DATA ANALYST</p>
       </div>
+    </div>
+  )
+}
+
+function GovForm() {
+  return (
+    <div className="w-72 rotate-[-1.5deg] rounded-lg bg-paper p-5 text-ink shadow-xl">
+      <div className="flex items-center justify-between border-b border-ink/15 pb-2">
+        <p className="font-mono text-[0.65rem] font-bold tracking-[0.2em]">FORM SG-24</p>
+        <Barcode className="h-4 w-14" />
+      </div>
+      <div className="mt-3 space-y-1.5 font-mono text-[0.65rem] leading-relaxed">
+        <p>DEPT: DIGITAL SERVICES</p>
+        <p>FILED: MAY–AUG 2024</p>
+      </div>
+      <div className="mt-4 flex justify-center">
+        <div className="rotate-[-8deg] rounded border-2 border-sage px-4 py-1.5 font-mono text-xs font-bold tracking-[0.2em] text-sage">
+          APPROVED
+        </div>
+      </div>
+      <p className="mt-4 text-right font-mono text-[0.6rem] tracking-[0.1em]">INTERN</p>
     </div>
   )
 }
@@ -82,7 +105,7 @@ function ClothingTag() {
   )
 }
 
-const objects = { card: BankCard, rx: RxLabel, tag: ClothingTag }
+const objects = { card: BankCard, rx: RxLabel, form: GovForm, tag: ClothingTag }
 
 export default function Experience() {
   const reduceMotion = useReducedMotion()

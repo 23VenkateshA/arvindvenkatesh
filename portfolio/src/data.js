@@ -24,6 +24,18 @@ export const experience = [
     ],
   },
   {
+    company: 'SimpliGov',
+    role: 'Intern',
+    object: 'form',
+    blurb:
+      'Redesigned government workflow processes by translating stakeholder needs into intuitive digital solutions — automating critical workflows and integrating them with payments and single sign-on systems.',
+    notable: [
+      '20% faster approvals',
+      '15% greater accuracy',
+      'Payments + SSO integrations',
+    ],
+  },
+  {
     company: "L'Oréal",
     role: "Product Strategy Fellow · Brandstorm",
     object: 'tag',
@@ -65,13 +77,6 @@ export const sideQuests = [
     detail:
       'One of 3 winning teams out of 90 across Rutgers, leading product ideation and go-to-market strategy judged by Verizon professionals.',
     tags: 'product ideation · GTM',
-  },
-  {
-    name: 'Practice Pal',
-    role: 'creator',
-    detail:
-      'An app that helps music students structure and track their practice sessions, designed end-to-end from Figma wireframes to a working product.',
-    tags: 'Firebase · JavaScript · Figma',
   },
 ]
 
