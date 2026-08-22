@@ -4,6 +4,7 @@ import StampBorder from './components/StampBorder.jsx'
 import { RoughDefs } from './components/Stamps.jsx'
 import { socials } from './data/socials.js'
 import Home from './pages/Home.jsx'
+import Projects from './pages/Projects.jsx'
 import BlogList from './pages/BlogList.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 
@@ -48,6 +49,7 @@ export default function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>

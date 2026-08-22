@@ -6,6 +6,7 @@ import { socials } from '../data/socials.js'
 
 const links = [
   { to: '/', label: 'About' },
+  { to: '/projects', label: 'Projects' },
   { to: '/blog', label: 'Misc' },
 ]
 

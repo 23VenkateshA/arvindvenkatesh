@@ -67,13 +67,6 @@ export const sideQuests = [
     tags: 'product ideation · GTM',
   },
   {
-    name: 'NBA MVP Predictor',
-    role: 'creator',
-    detail:
-      'A machine-learning model that forecasts the NBA MVP race from historical player and team statistics.',
-    tags: 'Python · scikit-learn · pandas',
-  },
-  {
     name: 'Practice Pal',
     role: 'creator',
     detail:

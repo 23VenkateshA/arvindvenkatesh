@@ -136,6 +136,15 @@ export function ChartStamp({ className }) {
   )
 }
 
+export function CoinStamp({ className }) {
+  return (
+    <Stamp className={className} frame="round">
+      <path d="M32 20 v24" strokeWidth="2" />
+      <path d="M26.5 25 q0 -4 5.5 -4 t5.5 4 q0 3.5 -5.5 5 t-5.5 5 q0 4 5.5 4 t5.5 -4" strokeWidth="2" />
+    </Stamp>
+  )
+}
+
 export function CameraStamp({ className }) {
   return (
     <Stamp className={className}>
@@ -242,6 +251,15 @@ export function TikTokIcon({ className }) {
       stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <path d="M13.5 4 v10.8 a3.4 3.4 0 1 1 -3.4 -3.4" />
       <path d="M13.5 6 c0.8 2.2 2.6 3.6 5 3.8" />
+    </svg>
+  )
+}
+
+export function GitHubIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none"
+      stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 19c-4 1.4-4-2-6-2m12 4v-3.2c0-.9.3-1.5.7-1.9-2.5-.3-5.2-1.3-5.2-5.5 0-1.2.5-2.2 1.2-3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.1a11 11 0 0 1 5.8 0c2.2-1.4 3.2-1.1 3.2-1.1.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3 0 4.2-2.7 5.2-5.2 5.5.4.4.8 1.1.8 2.2V19" />
     </svg>
   )
 }
